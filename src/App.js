@@ -1,6 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'; // import react component
+import 'bootstrap/dist/css/bootstrap.min.css'; // add bootstrap styles
+import './App.css'; // add custom CSS values
+
+// COMPONENTS
+import Landing from './components/landing';
 
 
 // this app uses the class based system
@@ -13,12 +16,9 @@ class App extends React.Component {
 
   render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>TOP DOG 2021</h2>
-      </header>
-    </div>
+    <>
+        <Landing/>
+    </>
   );
 }
 }

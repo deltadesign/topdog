@@ -4,8 +4,8 @@ import './App.css'; // add custom CSS values
 
 // COMPONENTS
 import Landing from './components/landing';
-
-
+import navbar from './components/navbar';
+import navbaritems from './components/navbaritems';
 // this app uses the class based system
 // this class conatins the render method
 class App extends React.Component {

@@ -4,6 +4,7 @@ import './App.css'; // add custom CSS values
 
 // COMPONENTS
 import Landing from './components/landing';
+import Footer from './components/footer';
 
 
 // this app uses the class based system
@@ -18,6 +19,7 @@ class App extends React.Component {
   return (
     <>
         <Landing/>
+        <Footer/>
     </>
   );
 }

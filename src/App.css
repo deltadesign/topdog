@@ -9,3 +9,16 @@
   justify-content: center;
   align-items: center;
 }
+
+.footer{
+    color: white;
+    background-color:black ;
+    padding-top: 3em;
+    position: relative;
+    bottom: 0;
+    width:100%;
+  }
+
+/* .footerContainer{
+  background-color: yellow;
+} */

@@ -1,9 +1,11 @@
 import React from 'react';
 
+//components
+import Login from './forms/loginform'
+
 // Bootstrap Elements
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/row';
 
 
 class Landing extends React.Component{
@@ -17,13 +19,13 @@ class Landing extends React.Component{
 
     <div className = "landing">
       <Container className = "landingContainer">
-        <Form>
-          <Form.Group controlId = "userLoginName">
-            <Form.Label>Username</Form.Label>
-            <Form.Control type = "email" placeholder = "Enter Your Email"></Form.Control>
-          </Form.Group>
-          <Button variant = "secondary" type="submit">Enter</Button>
-        </Form>
+
+        <Row>
+          <h2 id="welcome-message">Welcome</h2>
+        </Row>
+        
+        <Login />
+
       </Container>
     </div>
     

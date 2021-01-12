@@ -1,7 +1,8 @@
 import React from 'react';
 
 //components
-import Login from './forms/loginform'
+import Login from './forms/loginform';
+
 
 // Bootstrap Elements
 import Container from 'react-bootstrap/Container';
@@ -18,15 +19,14 @@ class Landing extends React.Component{
    return (
 
     <div className = "landing">
-      <Container className = "landingContainer">
-
-        <Row>
-          <h2 id="welcome-message">Welcome</h2>
-        </Row>
-        
-        <Login />
-
-      </Container>
+      
+        <Container className = "landingContainer">
+          <Row>
+            <h2 id="welcome-message">Welcome</h2>
+          </Row>
+          <Login />
+        </Container>
+     
     </div>
     
    )

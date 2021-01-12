@@ -1,7 +1,12 @@
+:root{
+  --mainbrand: #ff6f69;
+}
+
+
 .landing{
   display: flex;
   height: 100vh;
-  background-image: url('./assets/images/sky.jpg');
+  /* background-image: url('./assets/images/sky.jpg'); */
 }
 
 .landingContainer{
@@ -13,7 +18,7 @@
 
 .navbar{
   color: white;
-  background-color:black ;
+  background-color: var(--mainbrand);
   padding-top: 1em;
   position: relative;
   bottom: 0;
@@ -34,7 +39,7 @@
 
 .footer{
     color: white;
-    background-color:black ;
+    background-color: var(--mainbrand) ;
     padding-top: 3em;
     position: relative;
     bottom: 0;

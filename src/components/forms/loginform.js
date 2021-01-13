@@ -13,9 +13,7 @@ class Login extends React.Component{
 
   render() {
    return (
-
-    <div className = "login">      
-        
+        <div>
         <Form className = "user-login-form">
             <Form.Group controlId = "user-login-name">
               <Form.Row className="align-items-center">
@@ -31,9 +29,7 @@ class Login extends React.Component{
             </Form.Group>
               <Button variant = "secondary" type="submit">Submit</Button>
         </Form>
-
-    </div>
-    
+      </div>
    )
   }
 }

@@ -20,7 +20,7 @@ class App extends React.Component {
     <> 
       {/* <Navbar/> */}
         <Landing/>
-          <Footer/>
+          {/* <Footer/> */}
     </>
   );
 }

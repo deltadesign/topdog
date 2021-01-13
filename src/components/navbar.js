@@ -17,18 +17,19 @@ class Navbar extends React.Component {
             <div class="navbar">
                 
                 <a href="#about">About</a>
-                    <a href="#profile">Profile</a>
-                        <a href="#extra">Extra</a>
-                            <a href="#links">Links</a>
-                             <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                        </div>
+                <a href="#profile">Profile</a>
+                <a href="#extra">Extra</a>
+                <a href="#links">Links</a>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+            
+            </div>
 
-                    <div className="row">
-                        <h4>Top Dog Inc Logo</h4>
-                           </div>
+                <div className="row">
+                <h4 className="logo-text">Top Dog</h4>
+                </div>
 
-                  </div>     
+            </div>     
                    
 
 

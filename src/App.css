@@ -1,12 +1,12 @@
 :root{
   --mainbrand: #ff6f69;
+  --brandbckgrnd : #f3f3f3;
 }
-
 
 .landing{
   display: flex;
   height: 100vh;
-  /* background-image: url('./assets/images/sky.jpg'); */
+  background: var(--brandbckgrnd);
 }
 
 .landingContainer{
@@ -14,6 +14,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.user-login-form{
+  padding: 20px;
+  margin-bottom: 50px;
+  background: white;
+  border-radius: 9px;
+  border: 3px solid #555;
 }
 
 .navbar{
@@ -36,11 +44,11 @@
   font-family: Arial;
 }
 
-
 .footer{
     color: white;
     background-color: var(--mainbrand) ;
-    padding-top: 3em;
+    padding-top: 0.5em;
+    padding-left: 1em;
     position: relative;
     bottom: 0;
     width:100%;
@@ -50,11 +58,4 @@
   background-color: yellow;
 } */
 
-.user-login-form{
-  padding: 20px;
-  margin-bottom: 50px;
-  background: rgba(255,255,255, 0.5);
-  border-radius: 9px;
-  border: 3px solid #555;
-}
 

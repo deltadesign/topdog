@@ -15,7 +15,7 @@ class Footer extends React.Component {
 
             <div className="footer">
                 {/* <Container className="footerContainer"> */}
-                    <div className="row">
+                    {/* <div className="row">
                         <div className="col">
                             <h4>Top Dog Inc</h4>
                             <ul className="list-unstyled">
@@ -40,8 +40,8 @@ class Footer extends React.Component {
                                 <li>Even More Info</li>
                             </ul>
                         </div>
-                    </div>
-                    <hr />
+                    </div> 
+                    <hr />*/}
                     <div className="row">
                         <p className="col-sm">
                             &copy;{new Date().getFullYear()} Top Dog Inc | All rights reserved | Terms of Service | Privacy |

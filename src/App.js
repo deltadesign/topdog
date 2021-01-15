@@ -4,11 +4,12 @@ import './App.css'; // add custom CSS values
 
 // COMPONENTS
 import Landing from './components/landing';
+import Profile from './components/profile';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
 
 // this app uses the class based system
-// this class conatins the render method
+// this class contains the render method
 class App extends React.Component {
 
   constructor(props){
@@ -19,7 +20,8 @@ class App extends React.Component {
   return (
     <> 
       {/* <Navbar/> */}
-        <Landing/>
+        {/* <Landing/> */}
+        <Profile/>
           {/* <Footer/> */}
     </>
   );

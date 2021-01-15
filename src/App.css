@@ -3,10 +3,9 @@
   --brandbckgrnd : #f3f3f3;
 }
 
-.landing{
+.landing-page{
   display: flex;
   height: 100vh;
-  width: 100vw;
   background: var(--brandbckgrnd);
 }
 
@@ -36,7 +35,7 @@
   padding: 1em;
 }
 
-.user-login-form{
+.user-login-form {
   padding: 20px;
   background: white;
   border-radius: 9px;

@@ -75,4 +75,23 @@
 /* .footerContainer{
   background-color: yellow;
 } */
+.profile-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height:350px;
+  background:peachpuff;
+}
 
+.profile-card h4, h6{
+  border-bottom: 2px solid red;
+}
+
+#userImage{
+  background-image: url("./assets/images/BlueStaffie.jpg");
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}

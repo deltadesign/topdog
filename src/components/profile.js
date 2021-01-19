@@ -21,7 +21,7 @@ class Profile extends React.Component{
     render() {
       return (
         <Container>
-          <Button variant = "outline-warning" onClick = {()=>this.logout()}>LOGOUT</Button>
+          <Button variant = "outline-dark" onClick = {()=>this.logout()}>LOGOUT</Button>
           <h2>STATUS CARD</h2>
         <Status/>
         </ Container>

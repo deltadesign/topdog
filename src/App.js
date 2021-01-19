@@ -28,13 +28,12 @@ class App extends React.Component {
    }))
   }
 
-
   render() {
   return (
     <> 
     {/* <pre>{JSON.stringify(this.state)}</pre> */}
       {/* <Navbar/> */}
-       {this.state.loggedIn ? <Profile logout = {()=>this.userLogin()}/> :<Landing userLogin = {()=>this.userLogin()}/>}
+       {this.state.loggedIn ? <Profile logout = {()=>this.userLogin()}/> : <Landing userLogin = {()=>this.userLogin()}/>}
       {/* <Footer/> */}
     </>
   );

@@ -16,6 +16,16 @@ class Login extends React.Component{
   submitHandler(e){
     e.preventDefault();
     
+    const username = e.target.username.value;
+    const password = e.target.password.value;
+
+    // conditional for login, if username & pword are blank no access
+    // if(username === '' || password === ''){
+    //   console.log('no access')
+    // } else {
+    //   this.props.login();
+    // }
+    
     this.props.login();
 
     e.target.username.value = "";

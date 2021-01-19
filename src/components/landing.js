@@ -15,6 +15,12 @@ class Landing extends React.Component{
 
   }
 
+  // part 2 of login
+  // this calls a function in App.js to complete the login
+  userLogin(){
+    this.props.userLogin()
+  }
+
   render() {
    return (
 
@@ -31,7 +37,7 @@ class Landing extends React.Component{
         </div>
       </div>
       <div className="loginbox">
-        <Login />
+        <Login login ={() => this.userLogin()} />
       </div>  
       
     </div>

@@ -8,7 +8,7 @@ import Landing from './components/landing';
 import Profile from './components/profile';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
-import Carousel from './components/carousel';
+import ImageCarousel from './components/carousel';
 
 // this app uses the class based system
 // this class contains the render method
@@ -24,7 +24,7 @@ class App extends React.Component {
       <Navbar/>
         {/* <Landing/> */}
         {/* <Profile/> */}
-        {/* <Carousel/> */}
+        <ImageCarousel/>
           {/* <Footer/> */}
     </>
   );

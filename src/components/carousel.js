@@ -2,11 +2,11 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 // Bootstrap Elements
-// import Container from 'react-bootstrap/Container';
-// import Carousel from 'react-bootstrap'
+import Container from 'react-bootstrap/Container';
+import Carousel from 'react-bootstrap/Carousel'
 
 
-class Carousel extends React.Component {
+class imageCarousel extends React.Component {
     constructor(props) {
         super(props)
         this.state = {}
@@ -16,6 +16,7 @@ class Carousel extends React.Component {
     render() {
         return (
             <>
+            <h1>Hello world</h1>
                 <Carousel>
                     <Carousel.Item>
                         <img
@@ -31,7 +32,7 @@ class Carousel extends React.Component {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="holder.js/800x400?text=Second slide&bg=282c34"
+                            src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                             alt="Third slide"
                         />
 
@@ -43,7 +44,7 @@ class Carousel extends React.Component {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="holder.js/800x400?text=Third slide&bg=20232a"
+                            src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                             alt="Third slide"
                         />
 
@@ -60,4 +61,4 @@ class Carousel extends React.Component {
 
 
 
-export default Carousel;
+export default imageCarousel;

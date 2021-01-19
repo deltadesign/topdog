@@ -14,15 +14,27 @@ class App extends React.Component {
 
   constructor(props){
     super(props)
+    this.state = {
+      loggedIn: false
+    }
+  }
+
+  //final part of login
+  //toggles state of loggedIn
+  userLogin(){
+   
+   this.setState((state) => ({
+     loggedIn: !this.state.loggedIn
+   }))
   }
 
   render() {
   return (
     <> 
+    {/* <pre>{JSON.stringify(this.state)}</pre> */}
       {/* <Navbar/> */}
-        {/* <Landing/> */}
-        <Profile/>
-          {/* <Footer/> */}
+       {this.state.loggedIn ? <Profile/> :<Landing userLogin = {()=>this.userLogin()}/>}
+      {/* <Footer/> */}
     </>
   );
 }

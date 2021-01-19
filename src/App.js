@@ -8,7 +8,6 @@ import Landing from './components/landing';
 import Profile from './components/profile';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
-import ImageCarousel from './components/carousel';
 
 // this app uses the class based system
 // this class contains the render method
@@ -33,18 +32,11 @@ class App extends React.Component {
   render() {
   return (
     <> 
-<<<<<<< HEAD
     {/* <pre>{JSON.stringify(this.state)}</pre> */}
       {/* <Navbar/> */}
        {this.state.loggedIn ? <Profile logout = {()=>this.userLogin()}/> : <Landing userLogin = {()=>this.userLogin()}/>}
+       
       {/* <Footer/> */}
-=======
-      <Navbar/>
-        {/* <Landing/> */}
-        {/* <Profile/> */}
-        <ImageCarousel/>
-          {/* <Footer/> */}
->>>>>>> carouselFeatureBranch
     </>
   );
 }

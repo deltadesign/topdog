@@ -1,6 +1,7 @@
 import React from 'react'
 
 //COMPONENTS
+import ImageCarousel from '../components/carousel';
 import Status from '../components/cards/statusCard';
 
 //BOOTSTRAP COMPONENTS
@@ -24,6 +25,7 @@ class Profile extends React.Component{
           <Button variant = "outline-dark" onClick = {()=>this.logout()}>LOGOUT</Button>
           <h2>STATUS CARD</h2>
         <Status/>
+        <ImageCarousel/>
         </ Container>
       )
   }

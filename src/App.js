@@ -35,7 +35,6 @@ class App extends React.Component {
     {/* <pre>{JSON.stringify(this.state)}</pre> */}
       {/* <Navbar/> */}
        {this.state.loggedIn ? <Profile logout = {()=>this.userLogin()}/> : <Landing userLogin = {()=>this.userLogin()}/>}
-       
       {/* <Footer/> */}
     </>
   );

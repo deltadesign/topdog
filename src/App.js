@@ -8,7 +8,7 @@ import Landing from './components/landing';
 import Profile from './components/profile';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
-import Feed from './components/cards/feedCard';
+
 // this app uses the class based system
 // this class contains the render method
 class App extends React.Component {

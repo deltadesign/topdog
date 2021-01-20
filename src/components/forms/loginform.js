@@ -11,10 +11,22 @@ class Login extends React.Component{
 
   }
 
+  //this is the start point of the login function
+  // it calls a function in landing.js
   submitHandler(e){
     e.preventDefault();
-    // console.log(e.target.username.value);
-    // console.log(e.target.password.value);
+    
+    const username = e.target.username.value;
+    const password = e.target.password.value;
+
+    // conditional for login, if username & pword are blank no access
+    // if(username === '' || password === ''){
+    //   console.log('no access')
+    // } else {
+    //   this.props.login();
+    // }
+    
+    this.props.login();
 
     e.target.username.value = "";
     e.target.password.value = "";

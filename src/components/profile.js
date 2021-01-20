@@ -23,10 +23,15 @@ class Profile extends React.Component{
     render() {
       return (
         <Container>
+
+          <h2>status Card</h2>
+        <Status/>
+
           <Feed/>
           <Button variant = "outline-dark" onClick = {()=>this.logout()}>LOGOUT</Button>
           <Status/>
           <ImageCarousel/>
+
         </ Container>
       )
   }

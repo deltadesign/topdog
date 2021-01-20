@@ -148,7 +148,7 @@ border: 3px solid #555;
 }
 
 #userImage{
-  background-image: url("./assets/images/BlueStaffie.jpg");
+  background: url("./assets/images/BlueStaffie.jpg") no-repeat center;
   background-size: cover;
   height: 150px;
   width: 150px;

@@ -69,7 +69,7 @@
 
 #userImage1{
   /* background-image: url("./assets/images/doginbox.jpg"); */
-  /* background: url("./assets/images/doginbox.jpg")no-repeat center center; */
+  background: url("./assets/images/doginbox.jpg")no-repeat center center;
   background-size: cover;
   height: 100px;
   width: 100px;

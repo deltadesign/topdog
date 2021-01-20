@@ -15,7 +15,7 @@ class Profile extends React.Component{
     render() {
       return (
         <Container>
-          <h2>STATUS CARD</h2>
+          <h2>status Card</h2>
         <Status/>
         </ Container>
       )

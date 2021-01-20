@@ -15,25 +15,44 @@ class Status extends React.Component{
   render(){
   return (
     <>
+
     <Card className="status-card">
-        <Card.Title>UserName</Card.Title>
-        <Card.Body>On the internet nobody knows you're a dog</Card.Body>
-      <Row>
-        <Col md={11}>
-          {/* empty column */}
-        </Col>
-        <Col md={1}>
+       <Row>
+          <Col md={4}><div className="imageContainer">
+      <div id="userImage1"></div> 
+      </div></Col>
+          <Col md={8}> <h3>Bob's status update</h3>
+           <h5 className= "post-content"> Had a walk in the local park today</h5></Col>
+
+        
+           </Row>
+    
           <div className="buttonbox">
             <Button variant = "outline-success">▲</Button>
-            <Button variant = "outline-danger">▼</Button>
-            <div className="likes">100</div>
-          </div>
-        </Col>
-      </Row>
-    </Card>
-    </>
-  );
-}
+              <div className="likes">100</div>
+               </div>
+               
+             
+          </Card>
+       </>
+     );
+  }
 }
 
 export default Status;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

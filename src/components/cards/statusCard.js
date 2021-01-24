@@ -22,7 +22,7 @@ class Status extends React.Component{
       <div id="userImage1"></div> 
       </div></Col>
           <Col md={8}> <h3>Bob's status update</h3>
-           <h5 className= "post-content"> Had a walk in the local park today</h5></Col>
+           <h5 className= "post-content"> Saw Louie the Jack Russell today in the park, hope hes in the park tomorrow!</h5></Col>
 
         
            </Row>

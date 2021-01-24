@@ -1,9 +1,15 @@
+  
 import React from 'react'
 
 //COMPONENTS
 import ImageCarousel from '../components/carousel';
 import Feed from '../components/cards/feedCard';
 import Status from '../components/cards/statusCard';
+// import StatusCard1 from '../components/cards/statusCard1';
+// import StatusCard2 from '../components/cards/statusCard2';
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
+// import Gallerycard from '../components/cards/galleryCard';
 
 //BOOTSTRAP COMPONENTS
 // Bootstrap Elements
@@ -22,14 +28,19 @@ class Profile extends React.Component{
 
     render() {
       return (
-        <Container>    
+        <Container> 
+          <Navbar/>
+          <Button variant = "outline-dark" onClick = {()=>this.logout()}>LOGOUT</Button>   
+             <Feed/>
           
-          <Feed/>
-          <Button variant = "outline-dark" onClick = {()=>this.logout()}>LOGOUT</Button>
-          <Status/>
-          <ImageCarousel/>
+           <Status/>
+            {/* <StatusCard1/>
+              <StatusCard2/> */}
+              {/* <Gallerycard/> */}
+              <Footer/>
+          {/* <ImageCarousel/> */}
 
-        </ Container>
+        </Container>
       )
   }
 }

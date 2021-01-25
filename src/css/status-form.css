@@ -1,0 +1,6 @@
+.status-form {
+  background-image: linear-gradient(var(--mainbrand),var(--brandbckgrnd));
+  border-radius: 9px;
+  border: 3px solid #555;  
+  padding: 10px;
+}

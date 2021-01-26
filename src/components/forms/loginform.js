@@ -26,7 +26,7 @@ class Login extends React.Component{
     //   this.props.login();
     // }
     
-    this.props.login();
+    this.props.login(username);
 
     e.target.username.value = "";
     e.target.password.value = "";
@@ -39,7 +39,7 @@ class Login extends React.Component{
             <Form.Group controlId = "user-login-name">
               <Form.Row className="align-items-center">
                 <Form.Label>Username</Form.Label>
-                <Form.Control name="username" type = "email" placeholder = "Your Email Address"></Form.Control>
+                <Form.Control name="username" type = "text" placeholder = "username" required></Form.Control>
                 <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text>
               </Form.Row>
             </Form.Group>

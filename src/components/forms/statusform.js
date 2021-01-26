@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/form';
 import Button from 'react-bootstrap/button';
 import '../../css/status-form.css'
 
-export default class statusform extends React.Component {
+export default class StatusForm extends React.Component {
   constructor(props) {
     super(props) 
     this.state = {

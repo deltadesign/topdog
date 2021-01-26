@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/row';
 import Col from 'react-bootstrap/col';
 import Container from 'react-bootstrap/container';
 import ImageCarousel from './carousel'
+import StatusForm from './forms/statusform'
 
 
 
@@ -25,7 +26,7 @@ class Feedpage extends React.Component {
                 <Container>
                     <Row>
                         <Col md='3'><FeedCard /></Col>
-                        <Col md='6'><StatusCard /></Col>
+                        <Col md='6'><StatusForm/><StatusCard /></Col>
                         <Col md='3'><ImageCarousel /></Col>
 
                     </Row>

@@ -47,6 +47,30 @@
     border: 3px solid #555;
   }
 
+profilepagelayout
+.navbar{
+  color: black;
+    background-image: linear-gradient(to bottom right,var(--mainbrand),var(--brandbckgrnd));
+    border: 3px solid #555;
+    border-radius: 9px;
+  padding-top: 1em;
+  position: relative;
+  bottom: 0;
+  width:100%;
+  font-family: Arial;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial;
+
+}
+
   .navbar{
     color: black;
       background-image: linear-gradient(to bottom right,var(--mainbrand),var(--brandbckgrnd));
@@ -69,6 +93,7 @@
     font-family: Arial;
   
   }
+main
 
 #userImage1{
   /* background-image: url("./assets/images/doginbox.jpg"); */
@@ -90,15 +115,17 @@
   align-items: flex-start;
   /* width: 400px; */
   height:auto;
+  
   background-image: linear-gradient(to bottom right,var(--mainbrand),var(--brandbckgrnd));
   border-radius: 9px;
   border: 3px solid #555;
-  padding: 10px 0px 10px;
+  
 } 
 
 .post-content{
 background-color: white;
-border-radius: 9px;
+border-radius: 12px;
+padding: 10px 10px 10px;
 }
 
 
@@ -122,8 +149,8 @@ border: 3px solid #555;
 
 
 .footer{
-  color: white;
-  background-color:black ;
+  color: black;
+  background-color:white ;
   padding-top: 3em;
   position: relative;
   bottom: 0;
@@ -158,3 +185,41 @@ border: 3px solid #555;
   border-radius: 50%;
   border: 3px solid white;
 }
+ profilepagelayout
+
+
+
+.profilearea{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  background: var(--mainbrand);
+  padding: 1em;
+
+}
+
+
+
+
+.profiletext{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  background: var(--mainbrand);
+  padding: 1em
+}
+
+
+
+
+
+
+
+
+
+
+
+ main

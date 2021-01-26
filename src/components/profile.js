@@ -34,24 +34,26 @@ class Profile extends React.Component{
       
         <Container> 
           <div className = "profile-page"></div>
-         <Navbar logout= {()=>this.logout()}/>
+            <Navbar logout= {()=>this.logout()}/>
          
-             
             <Row>
-           
-              <Col md="3"> <Feed/> <ViewprofileCard/> </Col>
-          <Col md="9">
-          <StatusCard1/>           
-              <br/>
-              <StatusCard2/>
-              <br/>
-              <StatusCard3/>
+              <Col md="3">
+                <Feed/> 
+                <ViewprofileCard/> 
               </Col>
+
+              <Col md="9">
+                <StatusCard1/>           
+                <br/>
+                <StatusCard2/>
+                <br/>
+                <StatusCard3/>
+              </Col>
+
                </Row>
                
               <Footer/>
          
-
         </Container>
       )
   }

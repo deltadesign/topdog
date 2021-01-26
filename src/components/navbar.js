@@ -13,6 +13,7 @@ class Navbar extends React.Component {
     render() {
         return (
 
+
         <div className="navbar">
         {/* <div class="navbar"> */}
             <div className="row">
@@ -28,13 +29,10 @@ class Navbar extends React.Component {
 
 
 
-                {/* <a href="#links">Links</a> */}
-                {/* <a href="#">Link 1</a>
-                <a href="#">Link 2</a> */}
-            
-            </div>
+             
 
-               
+           
+
 
               
                    

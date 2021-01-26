@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/card'
 import Button from 'react-bootstrap/button';
 import Row from 'react-bootstrap/row';
 import Col from 'react-bootstrap/col';
-// import {IoPawSharp} from 'react-icons/Io5';
+import {IoPawSharp} from 'react-icons/io5';
 
 
 class Status extends React.Component{
@@ -29,7 +29,7 @@ class Status extends React.Component{
            </Row>
     
           <div className="buttonbox">
-            {/* <IoPawSharp/> */}
+            <IoPawSharp/>
         
               <div className="likes">100</div>
                </div>

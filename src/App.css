@@ -1,4 +1,3 @@
-
 *{
   box-sizing: border-box;
 }
@@ -6,53 +5,52 @@
 :root{
   --mainbrand: #ff6f69;
   --brandbckgrnd : #f3f3f3;
-  }
+}
 
-  .landing-page{
-    display: flex;
-    height: 100vh;
-    background: var(--brandbckgrnd);
-  }
+.landing-page{
+  display: flex;
+  height: 100vh;
+  background: var(--brandbckgrnd);
+}
   
-  .aboutarea {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 60%;
-    background: var(--mainbrand);
-    padding: 1em;
-  }
+.aboutarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  background: var(--mainbrand);
+  padding: 1em;
+}
   
-  .abouttext {
-    width: 80%;
-    align-self: center;
-  }
+.abouttext {
+  width: 80%;
+  align-self: center;
+}
   
-  .abouttext p {
-    font-size: larger;
-  }
-  
-  .loginbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    padding: 1em;
-  }
-  
-  .user-login-form {
-    padding: 20px;
-    background: white;
-    border-radius: 9px;
-    border: 3px solid #555;
-  }
+.abouttext p {
+  font-size: larger;
+}
 
-profilepagelayout
+.loginbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 1em;
+}
+  
+.user-login-form {
+  padding: 20px;
+  background: white;
+  border-radius: 9px;
+  border: 3px solid #555;
+}
+
 .navbar{
   color: black;
-    background-image: linear-gradient(to bottom right,var(--mainbrand),var(--brandbckgrnd));
-    border: 3px solid #555;
-    border-radius: 9px;
+  background-image: linear-gradient(to bottom right,var(--mainbrand),var(--brandbckgrnd));
+  border: 3px solid #555;
+  border-radius: 9px;
   padding-top: 1em;
   position: relative;
   bottom: 0;
@@ -71,29 +69,28 @@ profilepagelayout
 
 }
 
-  .navbar{
-    color: black;
-      background-image: linear-gradient(to bottom right,var(--mainbrand),var(--brandbckgrnd));
-      border: 3px solid #555;
-      border-radius: 9px;
-    padding-top: 1em;
-    position: relative;
-    bottom: 0;
-    width:100%;
-    font-family: Arial;
-  }
+.navbar{
+  color: black;
+    background-image: linear-gradient(to bottom right,var(--mainbrand),var(--brandbckgrnd));
+    border: 3px solid #555;
+    border-radius: 9px;
+  padding-top: 1em;
+  position: relative;
+  bottom: 0;
+  width:100%;
+  font-family: Arial;
+}
   
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color:black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: Arial;
-  
-  }
-main
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial;
+
+}
 
 #userImage1{
   /* background-image: url("./assets/images/doginbox.jpg"); */
@@ -123,9 +120,9 @@ main
 } 
 
 .post-content{
-background-color: white;
-border-radius: 12px;
-padding: 10px 10px 10px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px 10px 10px;
 }
 
 
@@ -137,14 +134,14 @@ padding: 10px 10px 10px;
 
 
 .buttonbox{
-display:flex;
-align-items: center;
-align-self: flex-end;
-background-color:white;
-margin-right: 3em;
-padding: 0.5em;
-border-radius: 9px;
-border: 3px solid #555;
+  display:flex;
+  align-items: center;
+  align-self: flex-end;
+  background-color:white;
+  margin-right: 3em;
+  padding: 0.5em;
+  border-radius: 9px;
+  border: 3px solid #555;
 }
 
 
@@ -185,9 +182,6 @@ border: 3px solid #555;
   border-radius: 50%;
   border: 3px solid white;
 }
- profilepagelayout
-
-
 
 .profilearea{
   display: flex;
@@ -203,7 +197,6 @@ border: 3px solid #555;
 
 
 .profiletext{
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -211,15 +204,3 @@ border: 3px solid #555;
   background: var(--mainbrand);
   padding: 1em
 }
-
-
-
-
-
-
-
-
-
-
-
- main

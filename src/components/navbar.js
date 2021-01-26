@@ -13,32 +13,16 @@ class Navbar extends React.Component {
     render() {
         return (
 
-
         <div className="navbar">
-        {/* <div class="navbar"> */}
-            <div className="row">
+        
                 <h4 className="logo-text">Top Dog</h4>
-                </div>
-                 <a href="#Home">Home</a>
-                    <a href="#profile">Profile</a>
-                        <a href="#Newsfeed">Newsfeed</a>
-                            <a href="" onClick={()=>this.props.logout()}>Logout</a>
+                
+                <a href="#Home">Home</a>
+                <a href="#profile">Profile</a>
+                <a href="#Newsfeed">Newsfeed</a>
+                <a href="" onClick={()=>this.props.logout()}>Logout</a>
                            
-
-
-
-
-
-             
-
-           
-
-
-              
-                   
-
-
-
+        </div>
         )
     }
 }

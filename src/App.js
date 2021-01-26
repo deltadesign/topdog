@@ -1,10 +1,9 @@
 import React from 'react'; // import react component
 import 'bootstrap/dist/css/bootstrap.min.css'; // add bootstrap styles
 import './App.css'; // add custom CSS values 
-profilepagelayout
+
 // import './profile.css';
 
- main
 
 // COMPONENTS
 import Landing from './components/landing';
@@ -38,7 +37,7 @@ class App extends React.Component {
     <> 
       {/* <pre>{JSON.stringify(this.state)}</pre> */} 
        
-      {/* {this.state.loggedIn ? <Profile logout = {()=>this.userLogin()} username ={this.state.username}/> : <Landing userLogin = {(username)=>this.userLogin(username)}/>} */}
+      {this.state.loggedIn ? <Profile logout = {()=>this.userLogin()} username ={this.state.username}/> : <Landing userLogin = {(username)=>this.userLogin(username)}/>}
      <Feedpage/>
     </>
   );

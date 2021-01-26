@@ -9,7 +9,7 @@ import Landing from './components/landing';
 import Profile from './components/profile';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
-import StatusForm from './components/forms/statusform';
+
 // this app uses the class based system
 // this class contains the render method
 class App extends React.Component {
@@ -35,7 +35,7 @@ class App extends React.Component {
     <> 
     {/* <pre>{JSON.stringify(this.state)}</pre> */}
       {/* <Navbar/> */}
-      <StatusForm />
+ 
        {this.state.loggedIn ? <Profile logout = {()=>this.userLogin()}/> : <Landing userLogin = {()=>this.userLogin()}/>}
       {/* <Footer/> */}
     </>

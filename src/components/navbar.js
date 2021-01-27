@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { GiDogHouse } from 'react-icons/gi';
+import { SiDatadog } from "react-icons/si";
+
 // Bootstrap Elements
 // import Container from 'react-bootstrap/Container';
 
@@ -17,8 +20,8 @@ class Navbar extends React.Component {
         
                 <h4 className="logo-text">Top Dog</h4>
                 
-                <a href="#Home">Home</a>
-                <a href="#profile">Profile</a>
+                <a href="#Home"><GiDogHouse style={{height:"40px", width:"40px"}}/></a>
+                <a href="#profile"><SiDatadog style={{height:"40px", width:"40px"}}/></a>
                 <a href="#Newsfeed">Newsfeed</a>
                 <a href="" onClick={()=>this.props.logout()}>Logout</a>
                            

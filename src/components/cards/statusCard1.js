@@ -77,6 +77,7 @@ class StatusCard1 extends React.Component{
   render(){
     return (
       <div>
+        
       <Card className="status-card1">
        {/* <pre>{JSON.stringify(this.state)}</pre> */}
         <Row>
@@ -87,39 +88,39 @@ class StatusCard1 extends React.Component{
           </Col>
           <Col md={8}> 
             <h3>Bob's status update</h3>
-            <h5 className= "post-content"> Had a walk in the local park today with Louie</h5>
+            <h5 className= "post-content">{this.props.text}</h5>
           </Col>           
-        </Row>
+        </Row> 
         
         <div className="buttonbox">
           <div onClick={()=>this.pawsome()}><IoPawSharp/></div>
           <div className="likes">{this.state.likes}</div>
         </div>
-
-        <Row>
-          <Form onSubmit = {(e) => this.addComment(e)}>
-            <InputGroup className="m-3">
-              <Form.Control
-              placeholder="Add a Comment..."
-              name = "comment"
-              onChange = {(e) => this.handleChange(e)}
-              value = {this.state.comment}
-              />
-              <InputGroup.Append>
-              <Button variant = "secondary" type="submit">Comment</Button>
-              </InputGroup.Append>
-            </InputGroup>
-          </Form>
-        </Row>
-
-         
+    
       </Card>
 
         <Row>
-          <Col>
-          {this.renderComments()}
-          </Col>
+          <Col>{this.renderComments()}</Col>
         </Row>
+       
+          <Form onSubmit = {(e) => this.addComment(e)}>
+            <Form.Group className="m-3" controlId="comment">
+              <Form.Row>
+                <Col> 
+                  <Form.Control
+                  placeholder="Add a Comment..."
+                  name = "comment"
+                  onChange = {(e) => this.handleChange(e)}
+                  value = {this.state.comment}
+                  />
+                </Col>
+                <Col>
+                  <Button variant = "secondary" type="submit">Comment</Button>
+                </Col>
+              </Form.Row>
+            </Form.Group>
+          </Form>
+        
 
       </div>
      );

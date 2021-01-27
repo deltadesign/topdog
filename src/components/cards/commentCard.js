@@ -55,7 +55,6 @@ export default class commentCard extends React.Component {
       display: "flex",
       background: "var(--brandbckgrnd)",
       borderRadius: "9px",
-      border: "3px solid #555",
       borderRadius: "15px" ,
       fontFamily: "Arial",
       margin: "8px 0",

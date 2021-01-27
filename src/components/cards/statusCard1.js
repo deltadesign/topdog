@@ -1,5 +1,8 @@
 import React from 'react';
 
+//COMPONENTS
+import CommentCard from './commentCard'
+
 //BOOTSTRAP ELEMENTS
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/card';
@@ -49,8 +52,8 @@ class StatusCard1 extends React.Component{
 
   //RENDERS ALL COMMENTS
   renderComments(){
-    return this.state.comments.map((comment, i) => (
-      <h3 key = {i} style={{width:'600px', backgroundColor: 'white'}}>{comment}</h3>
+    return this.state.comments.reverse().map((comment, i) => (
+      <CommentCard key={i} comment = {comment} />
     ))
   }
 
@@ -73,7 +76,7 @@ class StatusCard1 extends React.Component{
 
   render(){
     return (
-
+      <div>
       <Card className="status-card1">
        <pre>{JSON.stringify(this.state)}</pre>
         <Row>
@@ -95,7 +98,7 @@ class StatusCard1 extends React.Component{
         </div>              
           <Form onSubmit = {(e) => this.addComment(e)}>
 
-            <InputGroup className="m-3 buttonbox" style={{width:'600px'}}>
+            <InputGroup className="m-3">
               <Form.Control
               placeholder="Comment..."
               name = "comment"
@@ -108,13 +111,15 @@ class StatusCard1 extends React.Component{
             </InputGroup>
            </Form>
        
+       
+      
+      </Card>
         <Row>
           <Col>
           {this.renderComments()}
           </Col>
         </Row>
-      
-      </Card>
+      </div>
      );
   }
 }

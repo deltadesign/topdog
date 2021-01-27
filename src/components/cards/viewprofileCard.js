@@ -4,10 +4,10 @@ import Card from 'react-bootstrap/card'
 import Button from 'react-bootstrap/button';
 import Row from 'react-bootstrap/row';
 import Col from 'react-bootstrap/col';
-import '../../profilepage.css';
 
-// Bootstrap Elements
-// import Container from 'react-bootstrap/Container';
+// CUSTOM CSS
+import '../../css/viewprofilecard.css';
+
 
 
 class ViewprofileCard extends React.Component {

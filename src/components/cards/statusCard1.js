@@ -15,6 +15,9 @@ import Form from 'react-bootstrap/form';
 //REACT ICONS
 import {IoPawSharp} from 'react-icons/io5';
 
+//CUSTOM CSS
+import '../../css/statuscard.css'
+
 class StatusCard1 extends React.Component{
   constructor(props){
   super(props)
@@ -78,7 +81,7 @@ class StatusCard1 extends React.Component{
     return (
       <div>
         
-      <Card className="status-card1">
+      <Card className="status-card">
        {/* <pre>{JSON.stringify(this.state)}</pre> */}
         <Row>
           <Col md={4}>

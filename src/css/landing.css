@@ -1,0 +1,40 @@
+/*  LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE */
+
+.landing-page{
+  display: flex;
+  height: 100vh;
+  background: var(--brandbckgrnd);
+}
+  
+.aboutarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  background: var(--mainbrand);
+  padding: 1em;
+}
+  
+.abouttext {
+  width: 80%;
+  align-self: center;
+}
+  
+.abouttext p {
+  font-size: larger;
+}
+
+.loginbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 1em;
+}
+  
+.user-login-form {
+  padding: 20px;
+  background: white;
+  border-radius: 9px;
+  border: 3px solid #555;
+}

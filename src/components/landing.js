@@ -1,12 +1,11 @@
 import React from 'react';
 
+
 //components
 import Login from './forms/loginform';
-import Footer from './footer';
 
-// Bootstrap Elements
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/row';
+//CSS
+import '../css/landing.css'
 
 
 class Landing extends React.Component{

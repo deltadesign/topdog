@@ -1,0 +1,61 @@
+/* VIEW PROFILE CARD VIEW PROFILE CARD VIEW PROFILE CARD VIEW PROFILE CARD VIEW PROFILE CARD  */
+
+#userImage1{
+  /* background-image: url("./assets/images/doginbox.jpg"); */
+  background: url("../assets/images/doginbox.jpg")no-repeat center center;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-left: 0.5em;
+  /* background: position 3em; */
+}
+
+#userImage2{
+  /* background-image: url("./assets/images/dogelf.jpg"); */
+  background: url("../assets/images/dogelf.jpg")no-repeat center center;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-left: 0.5em;
+  /* background: position 3em; */
+}
+
+#userImage3{
+  /* background-image: url("./assets/images/dogpartyhat.jpg"); */
+  background: url("../assets/images/dogpartyhat.jpg")no-repeat center center;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-left: 0.5em;
+  /* background: position 3em; */
+}
+
+#userImage4{
+  /* background-image: url("./assets/images/whitedog.jpg"); */
+  background: url("../assets/images/whitedog.jpg")no-repeat center center;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-left: 0.5em;
+  /* background: position 3em; */
+}
+
+#userImage5{
+  /* background-image: url("./assets/images/dogredcoat.jpg"); */
+  background: url("../assets/images/dogredcoat.jpg")no-repeat center center;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-left: 0.5em;
+  /* background: position 3em; */
+}

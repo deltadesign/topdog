@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Container from 'react-bootstrap/Container';
 import Carousel from 'react-bootstrap/Carousel'
 import dogFood from '.././assets/images/dogFood.jpg'; // with import
+import crackers from '.././assets/images/PeopleCrackers.jpg'; // with import
+import lassie from '.././assets/images/Lassie.jpg'; // with import
 
 class imageCarousel extends React.Component {
     constructor(props) {
@@ -22,7 +24,7 @@ class imageCarousel extends React.Component {
                         <img
                             className="d-block w-100"
                             src={dogFood} 
-                            style={{height:"100%",width:"auto"}}
+                            // style={{height:"100%",width:"auto"}}
                             alt="First slide"
                         />
                         <Carousel.Caption>
@@ -33,7 +35,8 @@ class imageCarousel extends React.Component {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                            src={crackers} 
+                            style={{height:"100%",width:"auto"}}
                             alt="Third slide"
                         />
 
@@ -45,7 +48,8 @@ class imageCarousel extends React.Component {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                            src={lassie} 
+                            style={{height:"100%",width:"auto"}}
                             alt="Third slide"
                         />
 

@@ -41,7 +41,7 @@ class Profile extends React.Component{
 
     return posts.map((post , i) => (
       <StatusCard1 key ={i} text={post} />
-    ))
+    )).reverse()
   }
 
   //logout method

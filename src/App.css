@@ -66,7 +66,6 @@
   padding: 14px 16px;
   text-decoration: none;
   font-family: Arial;
-
 }
 
 .navbar{
@@ -89,7 +88,6 @@
   padding: 14px 16px;
   text-decoration: none;
   font-family: Arial;
-
 }
 
 #userImage1{
@@ -102,7 +100,6 @@
   border: 3px solid white;
   margin-left: 0.5em;
   /* background: position 3em; */
-  
 }
 
 
@@ -123,13 +120,11 @@
   padding: 10px 10px 10px;
 }
 
-
 .likes{
   font-size:16px;
   color:#e8745b;
   margin-left: 0.5em;
 }
-
 
 .buttonbox{
   display:flex;
@@ -141,7 +136,6 @@
   border-radius: 9px;
   border: 3px solid #555;
 }
-
 
 .footer{
   color: black;

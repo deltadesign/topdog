@@ -1,9 +1,8 @@
 import React from 'react'
 
-import Row from 'react-bootstrap/row';
-import Col from 'react-bootstrap/col';
-
+//react Icons for likes/poops
 import {IoPawSharp} from 'react-icons/io5';
+import {FaPoop} from 'react-icons/fa';
 
 export default class commentCard extends React.Component {
   constructor(props){
@@ -11,6 +10,8 @@ export default class commentCard extends React.Component {
     this.state = {
       likes: 0,
       liked: false,
+      poops: 0,
+      pooped: false,
       }
     }
 
@@ -29,18 +30,36 @@ export default class commentCard extends React.Component {
         liked: false
       }))
     }
+  }  
+  
+  //ADDS & REMOVES A POOP
+  poopsome(){
+    const pooped = this.state.pooped;
+
+    if(pooped === false){
+      this.setState(() => ({
+        poops: this.state.poops+1,
+        pooped: true
+      }))
+    } else {
+      this.setState(() => ({
+        poops: this.state.poops-1,
+        pooped: false
+      }))
+    }
   }
 
   render() {
 
     const cardstyle = {
+      display: "flex",
       background: "var(--brandbckgrnd)",
       borderRadius: "9px",
       border: "3px solid #555",
       borderRadius: "15px" ,
       fontFamily: "Arial",
-      margin: "10px 0",
-      padding: "0.5em" ,
+      margin: "8px 0",
+      padding: "0.6em 0.3em" ,
     }
 
     const commentstyle = {
@@ -49,42 +68,36 @@ export default class commentCard extends React.Component {
       backgroundColor: "white",
       borderRadius: "15px" ,
       minHeight: "85%",
-    }
-
-    const colstyle = {
-      display: "flex",
-      flexDirection: "column",
-      justifyItems: "center",
-      justifyContent: "flex-end"
+      minWidth: "80%",
     }
 
     return (
            
           <div style = {cardstyle}>
-            <Row>
-              <Col sm={1}>
+                      
+                <div className="mr-2">
                 <div id="userImage2"></div>
-                <div><p>Doug</p></div>
-              </Col>
-              <Col sm={9}>
-                <div style = {commentstyle}>{this.props.comment}</div>
-              </Col>
-              
-              <Col sm={2} style ={colstyle}>
-                <div className="buttonbox">
-                <div onClick={()=>this.pawsome()}><IoPawSharp/></div>
-                <div className="likes">{this.state.likes}</div>
-                </div>
-              </Col>     
-            </Row>
+                <p className="text-center">Doug</p>
+                </div>   
+           
+                <div style = {commentstyle} >{this.props.comment}</div>
+
+                <div>           
+                  <div className="buttonbox">
+                    <div onClick={()=>this.pawsome()}><IoPawSharp/></div>
+                    <div className="likes">{this.state.likes}</div>
+                  </div>
+                  <div className="buttonbox">
+                    <div onClick={()=>this.poopsome()}><FaPoop/></div>
+                    <div className="likes">{this.state.poops}</div>
+                  </div>
+                </div>   
+
           </div>
       
     )
   }
 }
-
-
-
 
 
 //just keeping these here

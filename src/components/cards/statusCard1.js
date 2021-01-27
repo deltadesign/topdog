@@ -78,7 +78,7 @@ class StatusCard1 extends React.Component{
     return (
       <div>
       <Card className="status-card1">
-       <pre>{JSON.stringify(this.state)}</pre>
+       {/* <pre>{JSON.stringify(this.state)}</pre> */}
         <Row>
           <Col md={4}>
             <div className="imageContainer">

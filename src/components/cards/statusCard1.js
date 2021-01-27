@@ -52,7 +52,7 @@ class StatusCard1 extends React.Component{
 
   //RENDERS ALL COMMENTS
   renderComments(){
-    return this.state.comments.reverse().map((comment, i) => (
+    return this.state.comments.map((comment, i) => (
       <CommentCard key={i} comment = {comment} />
     ))
   }
@@ -85,7 +85,6 @@ class StatusCard1 extends React.Component{
             <div id="userImage1"></div> 
             </div>
           </Col>
-
           <Col md={8}> 
             <h3>Bob's status update</h3>
             <h5 className= "post-content"> Had a walk in the local park today with Louie</h5>
@@ -95,12 +94,13 @@ class StatusCard1 extends React.Component{
         <div className="buttonbox">
           <div onClick={()=>this.pawsome()}><IoPawSharp/></div>
           <div className="likes">{this.state.likes}</div>
-        </div>              
-          <Form onSubmit = {(e) => this.addComment(e)}>
+        </div>
 
+        <Row>
+          <Form onSubmit = {(e) => this.addComment(e)}>
             <InputGroup className="m-3">
               <Form.Control
-              placeholder="Comment..."
+              placeholder="Add a Comment..."
               name = "comment"
               onChange = {(e) => this.handleChange(e)}
               value = {this.state.comment}
@@ -109,16 +109,18 @@ class StatusCard1 extends React.Component{
               <Button variant = "secondary" type="submit">Comment</Button>
               </InputGroup.Append>
             </InputGroup>
-           </Form>
-       
-       
-      
+          </Form>
+        </Row>
+
+         
       </Card>
+
         <Row>
           <Col>
           {this.renderComments()}
           </Col>
         </Row>
+
       </div>
      );
   }

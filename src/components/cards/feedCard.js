@@ -1,12 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Card from 'react-bootstrap/card'
-import Button from 'react-bootstrap/button';
-import Row from 'react-bootstrap/row';
-import Col from 'react-bootstrap/col';
 
-// Bootstrap Elements
-// import Container from 'react-bootstrap/Container';
+// CUSTOM CSS
+import '../../css/feedcard.css'
 
 
 

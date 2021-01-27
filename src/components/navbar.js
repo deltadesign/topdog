@@ -3,9 +3,7 @@ import React from 'react';
 import { GiDogHouse } from 'react-icons/gi';
 import { SiDatadog } from "react-icons/si";
 
-// Bootstrap Elements
-// import Container from 'react-bootstrap/Container';
-
+import '../css/navbar.css'
 
 class Navbar extends React.Component {
     constructor(props) {

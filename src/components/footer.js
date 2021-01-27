@@ -1,7 +1,7 @@
 import React from 'react';
 
-// Bootstrap Elements
-// import Container from 'react-bootstrap/Container';
+// CUSTOM CSS
+import '../css/footer.css'
 
 
 class Footer extends React.Component {

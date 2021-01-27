@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './navbar';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import FeedCard from './cards/feedCard';
-import StatusCard from './cards/statusCard';
+import StatusCard1 from './cards/statusCard1';
 import Footer from './footer';
 import Row from 'react-bootstrap/row';
 import Col from 'react-bootstrap/col';
@@ -26,7 +26,7 @@ class Feedpage extends React.Component {
                 <Container>
                     <Row>
                         <Col md='3'><FeedCard /></Col>
-                        <Col md='6'><StatusForm/><StatusCard /></Col>
+                        <Col md='6'><StatusForm/><StatusCard1 text="I AM A GOOD DOGGO" /></Col>
                         <Col md='3'><ImageCarousel /></Col>
 
                     </Row>

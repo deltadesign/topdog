@@ -28,6 +28,7 @@
   font-size: 150px;
   color: white;
   font-family: 'Fredericka the Great', cursive;
+  background: var(--topdoglogo) right bottom no-repeat;
 }
 
 .loginbox {

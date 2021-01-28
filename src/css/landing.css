@@ -24,6 +24,12 @@
   font-size: larger;
 }
 
+.abouttext h1{
+  font-size: 150px;
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+}
+
 .loginbox {
   display: flex;
   align-items: center;

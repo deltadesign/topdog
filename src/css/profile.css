@@ -1,0 +1,27 @@
+/* PROFILE PAGE PROFILE PAGE PROFILE PAGE PROFILE PAGE PROFILE PAGE PROFILE PAGE PROFILE PAGE  */
+.profilepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--brandbckgrnd);
+}
+
+.leftcol{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1.2em;
+}
+
+.midcol{
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.2em;
+}
+
+.rightcol{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1.2em;
+}

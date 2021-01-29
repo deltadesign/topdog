@@ -2,14 +2,12 @@
 
 .navbar{
   color: black;
-  background-image: linear-gradient(to bottom right,var(--mainbrand),var(--brandbckgrnd));
-  border: 3px solid #555;
-  border-radius: 9px;
+  background-color: var(--mainbrand);
   padding-top: 1em;
-  position: relative;
   bottom: 0;
   width:100%;
   font-family: Arial;
+
 }
   
 .navbar a {
@@ -20,4 +18,13 @@
   padding: 14px 16px;
   text-decoration: none;
   font-family: Arial;
+}
+
+.navbar-icon{
+  height: 40px;
+  width: 40px;
+}
+
+.navbar-icon:hover{
+  transform: scale(1.1);
 }

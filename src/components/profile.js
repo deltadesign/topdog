@@ -8,7 +8,7 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import ViewprofileCard from './cards/viewprofileCard';
 import ImageCarousel from './carousel';
-
+import Heather from './adverts/Heather';
 
 
 //BOOTSTRAP COMPONENTS
@@ -54,27 +54,26 @@ class Profile extends React.Component {
       <section className="profilepage">
       <Navbar logout={() => this.logout()} />
         
-
           <Row>
-            <Col md="3" className="leftcol">
+            <Col md={3} className="leftcol">
               <Feed />
             </Col>
 
-            <Col md="6" className="midcol">
+            <Col md={6} className="midcol">
               <StatusForm statusUpdate={(status) => this.updateStatus(status)} />
               <br />
               {this.renderPosts()}
+              <Heather/>
             </Col>
 
-            <Col md="3" className="rightcol">
+            <Col md={3} className="rightcol">
             <ViewprofileCard />
-            <div className ="profile-carousel">
+            <div className ="profile-ad-wrapper">
               <ImageCarousel/>
             </div>
+            
             </Col>
-          </Row>
-
-        
+          </Row>        
 
         <Footer />
       </section>

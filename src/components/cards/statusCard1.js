@@ -5,7 +5,6 @@ import CommentCard from './commentCard'
 
 //BOOTSTRAP ELEMENTS
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from 'react-bootstrap/card';
 import Button from 'react-bootstrap/button';
 import Row from 'react-bootstrap/row';
 import Col from 'react-bootstrap/col';
@@ -78,50 +77,48 @@ class StatusCard1 extends React.Component{
 
   render(){
     return (
-      <div>
+      <div className="status-card-wrapper">
         
-      <Card className="status-card">
+        <div class="status-card-content">
 
-        <Row>
-
-          <Col md={2}>
-            <div className="imageContainer">
+          <div className="status-card-colleft">
             <div id="userImage1"></div> 
+          </div>
+
+          <div className="status-text">
+            <div className="status-card-colmid">
+              <h3 className = "username-text">Bob's status update</h3>
+              <h5 className="post-content">{this.props.text}</h5>
             </div>
-          </Col>
 
-          <Col md={10}> 
-            <h3>Bob's status update</h3>
-            <h5 className= "post-content">{this.props.text}</h5>
-          </Col>  
+            <div className="reaction-row">
+              <div className="buttonbox">
+                <div onClick={()=>this.pawsome()}><IoPawSharp/></div>
+                <div className="likes">{this.state.likes}</div>
+             </div>
+          </div>
 
-        </Row> 
-        
-        <div className="buttonbox">
-          <div onClick={()=>this.pawsome()}><IoPawSharp/></div>
-          <div className="likes">{this.state.likes}</div>
-        </div>
-        
-      </Card>
+          </div>
 
-        <Row>
+      </div>
+
+        <Row className="comments-row">
           <Col>{this.renderComments()}</Col>
         </Row>
        
           <Form onSubmit = {(e) => this.addComment(e)}>
             <Form.Group className="m-3" controlId="comment">
               <Form.Row>
-                <Col> 
+                
                   <Form.Control
                   placeholder="Add a Comment..."
                   name = "comment"
                   onChange = {(e) => this.handleChange(e)}
                   value = {this.state.comment}
                   />
-                </Col>
-                <Col>
-                  <Button variant = "secondary" type="submit">Comment</Button>
-                </Col>
+                  <div className="submit-btn-wrapper">
+                    <Button variant="outline-dark" className="submit-btn" type="submit">Comment</Button>
+                  </div>
               </Form.Row>
             </Form.Group>
           </Form>

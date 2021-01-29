@@ -7,12 +7,12 @@ import StatusCard1 from '../components/cards/statusCard1';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import ViewprofileCard from './cards/viewprofileCard';
-import ImageCarousel from './carousel'
+import ImageCarousel from './carousel';
+
 
 
 //BOOTSTRAP COMPONENTS
 // Bootstrap Elements
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/row';
 import Col from 'react-bootstrap/col';
 

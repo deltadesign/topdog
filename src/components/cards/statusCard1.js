@@ -84,13 +84,13 @@ class StatusCard1 extends React.Component{
 
         <Row>
 
-          <Col md={3}>
+          <Col md={2}>
             <div className="imageContainer">
             <div id="userImage1"></div> 
             </div>
           </Col>
 
-          <Col md={9}> 
+          <Col md={10}> 
             <h3>Bob's status update</h3>
             <h5 className= "post-content">{this.props.text}</h5>
           </Col>  

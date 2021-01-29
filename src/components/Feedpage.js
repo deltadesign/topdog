@@ -11,22 +11,38 @@ import ImageCarousel from './carousel'
 import StatusForm from './forms/statusform'
 
 
-
 class Feedpage extends React.Component {
     constructor(props) {
         super(props)
-
+        this.state = {
+            posts: []
+        }
     }
+
+    renderPosts() {
+        const posts = this.state.posts;
+    
+        return posts.map((post, i) => (
+          <StatusCard1 key={i} text={post} />
+        )).reverse()
+      }
+
+      updateStatus(status) {
+        this.setState(() => ({
+          posts: [...this.state.posts, status]
+        }))
+      }
 
     render() {
         return (
 
             <div>
                 <Row><Navbar /></Row>
+                {/* <pre>{JSON.stringify(this.state)}</pre> */}
                 <Container>
                     <Row>
                         <Col md='3'><FeedCard /></Col>
-                        <Col md='6'><StatusForm/><StatusCard1 text="I AM A GOOD DOGGO" /></Col>
+                        <Col md='6'><StatusForm statusUpdate={(status) => this.updateStatus(status)}/>{this.renderPosts()}</Col>
                         <Col md='3'><ImageCarousel /></Col>
 
                     </Row>

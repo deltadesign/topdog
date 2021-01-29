@@ -1,0 +1,39 @@
+.comment-card-wrapper{
+  display: flex;
+  flex-direction: column;
+  background: var(--brandbckgrnd);
+  font-family: Arial;
+  padding: 0.6em;
+  border-bottom: 6px solid white;
+}
+
+.comment-card{
+ display: flex;
+}
+
+.comment-card-colleft{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-wrapper{
+  width: 100%
+}
+
+.comment-text{
+  display: flex;
+  padding: 0.6em;
+  margin: 1.6em 0.3em 0.6em 0em;
+  background-color: white;
+  border-radius: 15px;
+  width:  100%;
+  
+}
+
+.comment-reaction-row{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}

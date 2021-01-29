@@ -32,3 +32,15 @@
   border-radius: 9px;
   border: 3px solid #555;
 }
+
+#userImage1{
+  /* background-image: url("./assets/images/doginbox.jpg"); */
+  background: url("../assets/images/doginbox.jpg")no-repeat center center;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-left: 0.5em;
+  /* background: position 3em; */
+}

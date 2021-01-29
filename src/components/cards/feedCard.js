@@ -4,25 +4,22 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 // CUSTOM CSS
 import '../../css/feedcard.css'
 
-
-
 class Feed extends React.Component {
     constructor(props) {
         super(props)
         this.state = {}
     }
 
-
     render() {
         return (
             <>
-                <div className="profile-card">
-                    <div className="upper-container">
+                <div className="profile-header-card">
+                    
                         <div className="image-container">
                             <div id="userImage"></div>
                         </div>
-                    </div>
-                    {/* <div className="lower-container"> */}
+                    
+
                     <h3>Brian</h3>
                     <h4>Head of Security</h4>
                     <h5>Following</h5>
@@ -30,7 +27,7 @@ class Feed extends React.Component {
 
                     <h5>Followers</h5>
                     <h6>234</h6>
-                    {/* </div> */}
+
                 </div>
             </>
         );

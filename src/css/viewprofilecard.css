@@ -1,15 +1,12 @@
 /* VIEW PROFILE CARD VIEW PROFILE CARD VIEW PROFILE CARD VIEW PROFILE CARD VIEW PROFILE CARD  */
 
-#userImage1{
-  /* background-image: url("./assets/images/doginbox.jpg"); */
-  background: url("../assets/images/doginbox.jpg")no-repeat center center;
-  background-size: cover;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  border: 3px solid white;
-  margin-left: 0.5em;
-  /* background: position 3em; */
+.view-profile-image-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  background-color: white;
+  padding-top: 0.6em;
 }
 
 #userImage2{
@@ -58,4 +55,13 @@
   border: 3px solid white;
   margin-left: 0.5em;
   /* background: position 3em; */
+}
+
+.view-profile-image-container [id^=userImage]:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#view-profile-text {
+  text-align: center;
 }

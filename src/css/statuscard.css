@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: flex-start;
   height:auto;
+  background-image: linear-gradient(to bottom right,var(--mainbrand),var(--brandbckgrnd));
   border-radius: 9px;
   border: 3px solid #555;
 } 
@@ -39,7 +40,7 @@
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  border: 3px solid var(--mainbrand);
+  border: 3px solid white;
   margin-left: 0.5em;
   /* background: position 3em; */
 }

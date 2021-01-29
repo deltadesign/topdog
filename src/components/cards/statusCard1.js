@@ -113,13 +113,13 @@ class StatusCard1 extends React.Component {
 
             <div className="reaction-row">
 
-              <div className="buttonbox">
-                <div onClick={() => this.poopsome()} style={this.state.pooped ? { color: "brown" } : { color: "black" }} ><FaPoop /></div>
+              <div className="buttonbox" onClick={() => this.poopsome()}>
+                <div  style={this.state.pooped ? { color: "brown" } : { color: "black" }} ><FaPoop /></div>
                 <div className="likes" >{this.state.poops}</div>
               </div>
 
-              <div className="buttonbox">
-                <div onClick={() => this.pawsome()} style={this.state.liked ? { color: "green" } : { color: "black" }}><IoPawSharp /></div>
+              <div className="buttonbox" onClick={() => this.pawsome()}>
+                <div style={this.state.liked ? { color: "green" } : { color: "black" }}><IoPawSharp /></div>
                 <div className="likes">{this.state.likes}</div>
               </div>
 

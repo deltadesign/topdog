@@ -25,3 +25,9 @@
   flex-direction: column;
   padding-top: 1.2em;
 }
+
+.profile-carousel{
+  width: 75%;
+  background-color: white;
+  margin-top: 0.6em;
+}

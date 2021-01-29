@@ -28,7 +28,7 @@ class Landing extends React.Component{
         <div className="abouttext">
           <h1 className="logo">Top Dog</h1>
           <hr/>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Welcome to topdog, the social media site for four legged friends who want to connect with the rest of the canine world! Share your tail wagging walks and borks with puppers small and large, from all corners of the World Wide Web.</p>
           <hr/>
           <div>
             &copy;{new Date().getFullYear()} Top Dog Inc | All rights reserved | Terms of Service | Privacy |

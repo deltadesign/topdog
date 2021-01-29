@@ -7,6 +7,7 @@ import StatusCard1 from '../components/cards/statusCard1';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import ViewprofileCard from './cards/viewprofileCard';
+import ImageCarousel from './carousel'
 
 
 //BOOTSTRAP COMPONENTS
@@ -67,6 +68,9 @@ class Profile extends React.Component {
 
             <Col md="3" className="rightcol">
             <ViewprofileCard />
+            <div className ="profile-carousel">
+              <ImageCarousel/>
+            </div>
             </Col>
           </Row>
 

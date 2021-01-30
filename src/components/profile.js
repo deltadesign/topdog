@@ -8,7 +8,7 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import ViewprofileCard from './cards/viewprofileCard';
 import ImageCarousel from './carousel';
-import Heather from './adverts/Heather';
+import RandomAd from './adverts/RandomAd';
 import Feedpage from './Feedpage';
 
 //ROUTER
@@ -69,7 +69,7 @@ class Profile extends React.Component {
                   <StatusForm statusUpdate={(status) => this.updateStatus(status)} />
                   <br />
                   {this.renderPosts()}
-                  <Heather />
+                  <RandomAd />
                 </Col>
 
                 <Col md={3} className="rightcol">

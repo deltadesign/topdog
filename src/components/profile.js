@@ -8,7 +8,7 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import ViewprofileCard from './cards/viewprofileCard';
 import ImageCarousel from './carousel';
-
+import SuggestedGroupscard from './cards/suggestedGroupsCard';
 
 
 //BOOTSTRAP COMPONENTS
@@ -18,6 +18,7 @@ import Col from 'react-bootstrap/col';
 
 //CUSTOM CSS
 import '.././css/profile.css'
+import suggestedGroupscards from './cards/suggestedGroupsCard';
 
 class Profile extends React.Component {
   constructor(props) {
@@ -58,6 +59,8 @@ class Profile extends React.Component {
           <Row>
             <Col md="3" className="leftcol">
               <Feed />
+              <br/>
+              <SuggestedGroupscard/>
             </Col>
 
             <Col md="6" className="midcol">

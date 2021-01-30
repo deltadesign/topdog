@@ -57,7 +57,7 @@ class StatusCard1 extends React.Component {
   //RENDERS ALL COMMENTS
   renderComments() {
     return this.state.comments.map((comment, i) => (
-      <CommentCard key={i} comment={comment} />
+      <CommentCard key={i} comment={comment} userNumber={Math.floor(Math.random()*4)} />
     ))
   }
 

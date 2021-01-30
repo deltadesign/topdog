@@ -42,7 +42,7 @@ export default class RandomAd extends React.Component {
   render() {
     return (
       <div className="advertisement">
-        <p>{this.randomAd()}</p>
+        {this.randomAd()}
       </div>
     )
   }

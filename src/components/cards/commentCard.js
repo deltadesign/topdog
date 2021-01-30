@@ -15,6 +15,7 @@ export default class commentCard extends React.Component {
       liked: false,
       poops: 0,
       pooped: false,
+      user: this.props.userNumber,
     }
   }
 
@@ -52,6 +53,28 @@ export default class commentCard extends React.Component {
     }
   }
 
+
+  randomUser(userNumber){
+
+    switch(userNumber){
+
+      case 0:
+        return <><div id="userImage2"></div><p>Douglas</p></>;
+    
+      case 1:
+        return <><div id="userImage3"></div><p>Ted</p></>;
+
+      case 2:
+        return <><div id="userImage4"></div><p>Pete</p></>;
+
+      case 3:
+        return <><div id="userImage5"></div><p>Kat</p></>;
+      
+      default:
+        return <><div id="userImage2"></div><p>Douglas</p></>;
+    }
+  }
+
   render() {
 
     return (
@@ -61,8 +84,7 @@ export default class commentCard extends React.Component {
         <div className="comment-card">
 
         <div className="comment-card-colleft">
-          <div id="userImage2"></div>
-          <p>Douglas</p>
+          {this.randomUser(this.state.user)}
         </div>
 
         <div className="comment-wrapper">

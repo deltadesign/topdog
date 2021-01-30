@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { GiDogHouse } from 'react-icons/gi';
+// import { GiDogHouse } from 'react-icons/gi';
 import { SiDatadog } from "react-icons/si";
 import { ImNewspaper } from "react-icons/im";
 import { GiExitDoor } from "react-icons/gi";
 
+//router elements
 import { Link } from 'react-router-dom';
 
 import '../css/navbar.css'

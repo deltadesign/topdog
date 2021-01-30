@@ -9,6 +9,10 @@ import Footer from '../components/footer';
 import ViewprofileCard from './cards/viewprofileCard';
 import ImageCarousel from './carousel';
 import Heather from './adverts/Heather';
+import Feedpage from './Feedpage';
+
+//ROUTER
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
 //BOOTSTRAP COMPONENTS
@@ -51,32 +55,40 @@ class Profile extends React.Component {
 
   render() {
     return (
-      <section className="profilepage">
-      <Navbar logout={() => this.logout()} />
-        
-          <Row>
-            <Col md={3} className="leftcol">
-              <Feed />
-            </Col>
+      <Router>
+        <Navbar logout={() => this.logout()} />
+        <Route path="/" exact render={(props) => (
+          <>
+            <section className="profilepage">
+              <Row>
+                <Col md={3} className="leftcol">
+                  <Feed />
+                </Col>
 
-            <Col md={6} className="midcol">
-              <StatusForm statusUpdate={(status) => this.updateStatus(status)} />
-              <br />
-              {this.renderPosts()}
-              <Heather/>
-            </Col>
+                <Col md={6} className="midcol">
+                  <StatusForm statusUpdate={(status) => this.updateStatus(status)} />
+                  <br />
+                  {this.renderPosts()}
+                  <Heather />
+                </Col>
 
-            <Col md={3} className="rightcol">
-            <ViewprofileCard />
-            <div className ="profile-ad-wrapper">
-              <ImageCarousel/>
-            </div>
-            
-            </Col>
-          </Row>        
+                <Col md={3} className="rightcol">
+                  <ViewprofileCard />
+                  <div className="profile-ad-wrapper">
+                    <ImageCarousel />
+                  </div>
+
+                </Col>
+              </Row>
+            </section>
+          </>
+        )} />
+
+        <Route path="/newsfeed" component={Feedpage} />
 
         <Footer />
-      </section>
+
+      </Router>
     )
   }
 }

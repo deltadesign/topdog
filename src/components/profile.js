@@ -42,9 +42,16 @@ class Profile extends React.Component {
   renderPosts() {
     const posts = this.state.posts;
 
-    return posts.map((post, i) => (
-      <StatusCard1 key={i} text={post} />
-    )).reverse()
+    return posts.map((post, i) => {
+      if(i%3===0){
+       return <>
+        <StatusCard1 key={i} text={post} />
+        <RandomAd/>
+        </>
+      } else {
+        return <StatusCard1 key={i} text={post} />
+      }
+    }).reverse()
   }
 
   //logout method
@@ -69,7 +76,7 @@ class Profile extends React.Component {
                   <StatusForm statusUpdate={(status) => this.updateStatus(status)} />
                   <br />
                   {this.renderPosts()}
-                  <RandomAd />
+                  
                 </Col>
 
                 <Col md={3} className="rightcol">

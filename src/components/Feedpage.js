@@ -20,12 +20,20 @@ class Feedpage extends React.Component {
         }
     }
 
+    //status render method
     renderPosts() {
         const posts = this.state.posts;
 
-        return posts.map((post, i) => (
-            <StatusCard1 key={i} text={post} />
-        )).reverse()
+        return posts.map((post, i) => {
+            if (i % 3 === 0) {
+                return <>
+                    <StatusCard1 key={i} text={post} />
+                    <RandomAd />
+                </>
+            } else {
+                return <StatusCard1 key={i} text={post} />
+            }
+        }).reverse()
     }
 
     updateStatus(status) {
@@ -37,24 +45,23 @@ class Feedpage extends React.Component {
     render() {
         return (
 
-        <section className="newsfeed-page">
+            <section className="newsfeed-page">
                 <Row>
-                <Col md='3' className="newsfeed-leftcol">
-                    <Feed />
-                </Col>
-                <Col md='6' className="newsfeed-midcol">
-                    <StatusForm statusUpdate={(status) => this.updateStatus(status)} />
-                    <br/>
-                    {this.renderPosts()}
-                    <RandomAd />
-                </Col>
-                <Col md='3' className="newsfeed-rightcol">
-                    <div className="newsfeed-ad-wrapper">
-                        <ImageCarousel />
-                    </div>
-                </Col>
+                    <Col md='3' className="newsfeed-leftcol">
+                        <Feed />
+                    </Col>
+                    <Col md='6' className="newsfeed-midcol">
+                        <StatusForm statusUpdate={(status) => this.updateStatus(status)} />
+                        <br />
+                        {this.renderPosts()}
+                    </Col>
+                    <Col md='3' className="newsfeed-rightcol">
+                        <div className="newsfeed-ad-wrapper">
+                            <ImageCarousel />
+                        </div>
+                    </Col>
                 </Row>
-        </section>
+            </section>
 
         )
     }

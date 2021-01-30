@@ -1,5 +1,15 @@
 .status-form {
- background-color: white;
- padding:  0.6em 1.2em;
- width: 100%;
+  background-color: white;
+  padding:  0.6em 1.2em;
+  width: 100%;
+ }
+
+ .status-submit-row{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#status{
+  height:auto;
 }

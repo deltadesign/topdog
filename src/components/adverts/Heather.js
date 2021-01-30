@@ -9,7 +9,7 @@ import '../../css/advert.css'
 export default class Heather extends React.Component {
   render() {
     return (
-      <div class="advertisement">
+      <div className="advertisement">
         <img src={HeatherGrooming}></img>
       </div>
     )

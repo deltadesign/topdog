@@ -99,7 +99,7 @@ class StatusCard1 extends React.Component {
     return (
       <div className="status-card-wrapper">
 
-        <div class="status-card-content">
+        <div className="status-card-content">
 
           <div className="status-card-colleft">
             <div id="userImage1"></div>

@@ -1,23 +1,33 @@
 /* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
-
 .navbar{
-  color: black;
+  display: flex;
   background-color: var(--mainbrand);
-  padding-top: 1em;
-  bottom: 0;
-  width:100%;
-  font-family: Arial;
+}
 
+.nav-wrapper{
+  display: flex;
+  width: 100%;
+}
+
+.logo-wrapper{
+  display: flex;
+}
+
+.logo-text{
+  font-size: 60px;
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.nav-icons-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
 }
   
-.navbar a {
-  float: left;
-  font-size: 16px;
+.nav-icons-wrapper a {
   color:black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: Arial;
 }
 
 .navbar-icon{
@@ -29,3 +39,4 @@
   transform: scale(1.1);
   color: #555;
 }
+

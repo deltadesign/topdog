@@ -8,7 +8,11 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import ViewprofileCard from './cards/viewprofileCard';
 import ImageCarousel from './carousel';
+import RandomAd from './adverts/RandomAd';
+import Feedpage from './Feedpage';
 
+//ROUTER
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
 //BOOTSTRAP COMPONENTS
@@ -38,9 +42,16 @@ class Profile extends React.Component {
   renderPosts() {
     const posts = this.state.posts;
 
-    return posts.map((post, i) => (
-      <StatusCard1 key={i} text={post} />
-    )).reverse()
+    return posts.map((post, i) => {
+      if(i%3===0){
+       return <>
+        <StatusCard1 key={i} text={post} />
+        <RandomAd/>
+        </>
+      } else {
+        return <StatusCard1 key={i} text={post} />
+      }
+    }).reverse()
   }
 
   //logout method
@@ -51,33 +62,40 @@ class Profile extends React.Component {
 
   render() {
     return (
-      <section className="profilepage">
-      <Navbar logout={() => this.logout()} />
-        
+      <Router>
+        <Navbar logout={() => this.logout()} />
+        <Route path="/" exact render={(props) => (
+          <>
+            <section className="profilepage">
+              <Row>
+                <Col md={3} className="leftcol">
+                  <Feed />
+                </Col>
 
-          <Row>
-            <Col md="3" className="leftcol">
-              <Feed />
-            </Col>
+                <Col md={6} className="midcol">
+                  <StatusForm statusUpdate={(status) => this.updateStatus(status)} />
+                  <br />
+                  {this.renderPosts()}
+                  
+                </Col>
 
-            <Col md="6" className="midcol">
-              <StatusForm statusUpdate={(status) => this.updateStatus(status)} />
-              <br />
-              {this.renderPosts()}
-            </Col>
+                <Col md={3} className="rightcol">
+                  <ViewprofileCard />
+                  <div className="profile-ad-wrapper">
+                    <ImageCarousel />
+                  </div>
 
-            <Col md="3" className="rightcol">
-            <ViewprofileCard />
-            <div className ="profile-carousel">
-              <ImageCarousel/>
-            </div>
-            </Col>
-          </Row>
+                </Col>
+              </Row>
+            </section>
+          </>
+        )} />
 
-        
+        <Route path="/newsfeed" component={Feedpage} />
 
         <Footer />
-      </section>
+
+      </Router>
     )
   }
 }

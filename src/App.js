@@ -5,7 +5,6 @@ import './App.css'; // add custom CSS values
 // COMPONENTS
 import Landing from './components/landing';
 import Profile from './components/profile';
-import Feedpage from './components/Feedpage';
 
 // this app uses the class based system
 // this class contains the render method
@@ -31,10 +30,7 @@ class App extends React.Component {
   render() {
   return (
     <> 
-      {/* <pre>{JSON.stringify(this.state)}</pre> */} 
-       
       {this.state.loggedIn ? <Profile logout = {()=>this.userLogin()} username ={this.state.username}/> : <Landing userLogin = {(username)=>this.userLogin(username)}/>}
-     <Feedpage/>
     </>
   );
 }

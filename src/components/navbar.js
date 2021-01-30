@@ -25,7 +25,7 @@ class Navbar extends React.Component {
                     </div>
 
                     <div className="nav-icons-wrapper">
-                        <a href="#Home" title="home"><GiDogHouse className="navbar-icon" /></a>
+                        {/* <a href="#Home" title="home"><GiDogHouse className="navbar-icon" /></a> */}
                         <Link to="/" title="profile"><SiDatadog className="navbar-icon"/></Link>
                         <Link to="newsfeed" title="newsfeed"><ImNewspaper className="navbar-icon" /></Link>
                         {/* <a href="#Newsfeed"><GiExitDoor style={{height:"40px", width:"40px"}}/></a> */}

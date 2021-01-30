@@ -2,7 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Feed from './cards/feedCard';
 import StatusCard1 from './cards/statusCard1';
-import Footer from './footer';
 import Row from 'react-bootstrap/row';
 import Col from 'react-bootstrap/col';
 import ImageCarousel from './carousel'
@@ -55,9 +54,6 @@ class Feedpage extends React.Component {
                     </div>
                 </Col>
                 </Row>
-
-                <Footer />
-
         </section>
 
         )

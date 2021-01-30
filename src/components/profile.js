@@ -8,7 +8,6 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import ViewprofileCard from './cards/viewprofileCard';
 import ImageCarousel from './carousel';
-import RandomAd from './adverts/RandomAd';
 import Feedpage from './Feedpage';
 
 //ROUTER
@@ -42,16 +41,9 @@ class Profile extends React.Component {
   renderPosts() {
     const posts = this.state.posts;
 
-    return posts.map((post, i) => {
-      if(i%3===0){
-       return <>
-        <StatusCard1 key={i} text={post} />
-        <RandomAd/>
-        </>
-      } else {
-        return <StatusCard1 key={i} text={post} />
-      }
-    }).reverse()
+    return posts.map((post, i) => (
+       <StatusCard1 key={i} text={post} />
+    )).reverse()
   }
 
   //logout method

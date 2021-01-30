@@ -1,5 +1,4 @@
 import React from 'react';
-// import Navbar from './navbar';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Feed from './cards/feedCard';
 import StatusCard1 from './cards/statusCard1';
@@ -7,7 +6,8 @@ import Footer from './footer';
 import Row from 'react-bootstrap/row';
 import Col from 'react-bootstrap/col';
 import ImageCarousel from './carousel'
-import StatusForm from './forms/statusform'
+import StatusForm from './forms/statusform';
+import RandomAd from './adverts/RandomAd';
 
 //CUSTOM CSS
 import '../css/newsfeed.css'
@@ -39,7 +39,6 @@ class Feedpage extends React.Component {
         return (
 
         <section className="newsfeed-page">
-            {/* <Navbar /> */}
                 <Row>
                 <Col md='3' className="newsfeed-leftcol">
                     <Feed />
@@ -48,6 +47,7 @@ class Feedpage extends React.Component {
                     <StatusForm statusUpdate={(status) => this.updateStatus(status)} />
                     <br/>
                     {this.renderPosts()}
+                    <RandomAd />
                 </Col>
                 <Col md='3' className="newsfeed-rightcol">
                     <div className="newsfeed-ad-wrapper">

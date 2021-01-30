@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './navbar';
+// import Navbar from './navbar';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Feed from './cards/feedCard';
 import StatusCard1 from './cards/statusCard1';
@@ -39,7 +39,7 @@ class Feedpage extends React.Component {
         return (
 
         <section className="newsfeed-page">
-            <Navbar />
+            {/* <Navbar /> */}
                 <Row>
                 <Col md='3' className="newsfeed-leftcol">
                     <Feed />

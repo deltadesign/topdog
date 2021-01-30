@@ -27,10 +27,10 @@ class Navbar extends React.Component {
 
                     <div className="nav-icons-wrapper">
                         {/* <a href="#Home" title="home"><GiDogHouse className="navbar-icon" /></a> */}
-                        <Link to="/" title="profile"><SiDatadog className="navbar-icon"/></Link>
+                        <Link to="/topdog" title="profile"><SiDatadog className="navbar-icon"/></Link>
                         <Link to="newsfeed" title="newsfeed"><ImNewspaper className="navbar-icon" /></Link>
                         {/* <a href="#Newsfeed"><GiExitDoor style={{height:"40px", width:"40px"}}/></a> */}
-                        <Link to="" onClick={() => this.props.logout()} title="logout"><GiExitDoor className="navbar-icon" /></Link>
+                        <Link to="/topdog" onClick={() => this.props.logout()} title="logout"><GiExitDoor className="navbar-icon" /></Link>
                     </div>
                 </div>
             </div>

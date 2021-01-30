@@ -56,7 +56,7 @@ class Profile extends React.Component {
     return (
       <Router>
         <Navbar logout={() => this.logout()} />
-        <Route path="/" exact render={(props) => (
+        <Route path="/topdog" exact render={(props) => (
           <>
             <section className="profilepage">
               <Row>

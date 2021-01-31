@@ -82,7 +82,7 @@ class Profile extends React.Component {
           </section>
         </Route>
 
-        <Route path="/newsfeed" component={Feedpage} />
+        <Route path="/topdog/newsfeed" component={Feedpage} />
 
         <Footer />
 

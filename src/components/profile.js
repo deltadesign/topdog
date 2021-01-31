@@ -85,7 +85,7 @@ class Profile extends React.Component {
         </Route>
 
         <Route path="/topdog/newsfeed" component={Feedpage} />
-      <section className="profilepage">
+      <section className="profilepage"/>
       <Navbar logout={() => this.logout()} />
         
 
@@ -114,7 +114,7 @@ class Profile extends React.Component {
 
         <Footer />
 
-      </Router>
+      <Router />
     )
   }
 }

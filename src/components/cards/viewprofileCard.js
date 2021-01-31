@@ -16,10 +16,10 @@ export default class ViewprofileCard extends React.Component {
                 <div className="view-profile-image-container">
                     <h4 id="view-profile-text">Recent Views</h4>
                     <br />
-                    <div id="userImage2"></div><h5>Doug</h5>
-                    <div id="userImage3"></div><h5>Ted</h5>
-                    <div id="userImage4"></div><h5>Pete</h5>
-                    <div id="userImage5"></div><h5>Kat</h5>
+                    <div id="userImage2"><div className="spot-on"></div></div><h5>Doug</h5>
+                    <div id="userImage3"><div className="spot-off"></div></div><h5>Ted</h5>
+                    <div id="userImage4"><div className="spot-on"></div></div><h5>Pete</h5>
+                    <div id="userImage5"><div className="spot-on"></div></div><h5>Kat</h5>
                 </div>
             </>
         );

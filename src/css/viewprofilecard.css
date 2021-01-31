@@ -62,3 +62,18 @@
 #view-profile-text {
   text-align: center;
 }
+
+.spot-on {
+  height: 25%;
+  width: 25%;
+  border-radius: 50%;
+  background-color: chartreuse;
+}
+
+.spot-off {
+  height: 25%;
+  width: 25%;
+  border-radius: 50%;
+  background-color: red;
+}
+

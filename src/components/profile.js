@@ -12,6 +12,7 @@ import Feedpage from './Feedpage';
 
 //ROUTER
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import SuggestedGroupscard from './cards/suggestedGroupsCard';
 
 
 //BOOTSTRAP COMPONENTS
@@ -21,6 +22,7 @@ import Col from 'react-bootstrap/col';
 
 //CUSTOM CSS
 import '.././css/profile.css'
+import suggestedGroupscards from './cards/suggestedGroupsCard';
 
 class Profile extends React.Component {
   constructor(props) {
@@ -83,10 +85,36 @@ class Profile extends React.Component {
         </Route>
 
         <Route path="/topdog/newsfeed" component={Feedpage} />
+      <section className="profilepage"/>
+      <Navbar logout={() => this.logout()} />
+        
+
+          <Row>
+            <Col md="3" className="leftcol">
+              <Feed />
+              <br/>
+              <SuggestedGroupscard/>
+            </Col>
+
+            <Col md="6" className="midcol">
+              <StatusForm statusUpdate={(status) => this.updateStatus(status)} />
+              <br />
+              {this.renderPosts()}
+            </Col>
+
+            <Col md="3" className="rightcol">
+            <ViewprofileCard />
+            <div className ="profile-carousel">
+              <ImageCarousel/>
+            </div>
+            </Col>
+          </Row>
+
+        
 
         <Footer />
 
-      </Router>
+      <Router />
     )
   }
 }

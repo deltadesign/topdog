@@ -11,7 +11,7 @@ import ImageCarousel from './carousel';
 import Feedpage from './Feedpage';
 
 //ROUTER
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 //BOOTSTRAP COMPONENTS
@@ -42,7 +42,7 @@ class Profile extends React.Component {
     const posts = this.state.posts;
 
     return posts.map((post, i) => (
-       <StatusCard1 key={i} text={post} />
+      <StatusCard1 key={i} text={post} />
     )).reverse()
   }
 
@@ -56,32 +56,31 @@ class Profile extends React.Component {
     return (
       <Router>
         <Navbar logout={() => this.logout()} />
-        <Route path="/topdog" exact render={(props) => (
-          <>
-            <section className="profilepage">
-              <Row>
-                <Col md={3} className="leftcol">
-                  <Feed />
-                </Col>
 
-                <Col md={6} className="midcol">
-                  <StatusForm statusUpdate={(status) => this.updateStatus(status)} />
-                  <br />
-                  {this.renderPosts()}
-                  
-                </Col>
+        <Route path="/topdog" exact>
+          <section className="profilepage">
+            <Row>
+              <Col md={3} className="leftcol">
+                <Feed />
+              </Col>
 
-                <Col md={3} className="rightcol">
-                  <ViewprofileCard />
-                  <div className="profile-ad-wrapper">
-                    <ImageCarousel />
-                  </div>
+              <Col md={6} className="midcol">
+                <StatusForm statusUpdate={(status) => this.updateStatus(status)} />
+                <br />
+                {this.renderPosts()}
 
-                </Col>
-              </Row>
-            </section>
-          </>
-        )} />
+              </Col>
+
+              <Col md={3} className="rightcol">
+                <ViewprofileCard />
+                <div className="profile-ad-wrapper">
+                  <ImageCarousel />
+                </div>
+
+              </Col>
+            </Row>
+          </section>
+        </Route>
 
         <Route path="/newsfeed" component={Feedpage} />
 

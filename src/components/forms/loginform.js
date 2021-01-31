@@ -4,12 +4,11 @@ import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-
 class Login extends React.Component{
   constructor(props){
   super(props)
 
-  }
+}
 
   //this is the start point of the login function
   // it calls a function in landing.js

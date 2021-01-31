@@ -43,7 +43,7 @@ class Profile extends React.Component {
     const posts = this.state.posts;
 
     return posts.map((post, i) => (
-      <StatusCard1 key={i} text={post} />
+      <StatusCard1 key={i} text={post} username={this.props.username} />
     )).reverse()
   }
 
@@ -64,7 +64,7 @@ class Profile extends React.Component {
             <Banner/>
             <Row>
               <Col md={3} className="leftcol">
-                <Feed />
+                <Feed username={this.props.username} />
                 <SuggestedGroupsCards />
               </Col>
 
@@ -83,7 +83,9 @@ class Profile extends React.Component {
 
           </section>
         </Route>
-        <Route path="/topdog/newsfeed" component={Feedpage}></Route>
+        <Route path="/topdog/newsfeed">
+          <Feedpage username={this.props.username} />
+        </Route>
         <Footer />
       </Router>
       

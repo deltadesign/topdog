@@ -56,6 +56,10 @@ export default class commentCard extends React.Component {
 
   randomUser(userNumber){
 
+    const user = 0;
+
+    console.log(user)
+
     switch(userNumber){
 
       case 0:

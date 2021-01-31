@@ -107,7 +107,7 @@ class StatusCard1 extends React.Component {
 
           <div className="status-text">
             <div className="status-card-colmid">
-              <h3 className="username-text">Bob's status update</h3>
+              <h3 className="username-text">{this.props.username}</h3>
               <h5 className="post-content">{this.props.text}</h5>
             </div>
 

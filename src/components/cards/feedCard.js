@@ -20,7 +20,7 @@ class Feed extends React.Component {
                         </div>
                     
 
-                    <h3>Brian</h3>
+                    <h3>{this.props.username}</h3>
                     <h4>Head of Security</h4>
                     <h5>Following</h5>
                     <h6>2</h6>

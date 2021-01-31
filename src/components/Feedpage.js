@@ -16,7 +16,7 @@ class Feedpage extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            posts: ["who let the dogs out??"]
+            posts: ["who let the dogs out??" , "Gangnam Style", "Hello World", "OMG", " BAd day don't want to talk about it",]
         }
     }
 
@@ -27,11 +27,11 @@ class Feedpage extends React.Component {
         return posts.map((post, i) => {
             if (i % 3 === 0) {
                 return <>
-                    <StatusCard1 key={i} text={post} />
+                    <StatusCard1 key={i} text={post}  username={this.props.username} />
                     <RandomAd />
                 </>
             } else {
-                return <StatusCard1 key={i} text={post} />
+                return <StatusCard1 key={i} text={post}  username={this.props.username} />
             }
         }).reverse()
     }
@@ -48,7 +48,7 @@ class Feedpage extends React.Component {
             <section className="newsfeed-page">
                 <Row>
                     <Col md='3' className="newsfeed-leftcol">
-                        <Feed />
+                        <Feed username={this.props.username} />
                     </Col>
                     <Col md='6' className="newsfeed-midcol">
                         <StatusForm statusUpdate={(status) => this.updateStatus(status)} />

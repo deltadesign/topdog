@@ -6,6 +6,7 @@ import Feed from '../components/cards/feedCard';
 import StatusCard1 from '../components/cards/statusCard1';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
+import Banner from '../components/banner';
 import ViewprofileCard from './cards/viewprofileCard';
 import ImageCarousel from './carousel';
 import Feedpage from './Feedpage';
@@ -60,6 +61,7 @@ class Profile extends React.Component {
 
         <Route path="/topdog" exact>
           <section className="profilepage">
+            <Banner/>
             <Row>
               <Col md={3} className="leftcol">
                 <Feed />

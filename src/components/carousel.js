@@ -2,11 +2,13 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 // Bootstrap Elements
-import Container from 'react-bootstrap/Container';
 import Carousel from 'react-bootstrap/Carousel'
 import dogFood from '.././assets/images/dogFood.jpg'; // with import
 import crackers from '.././assets/images/PeopleCrackers.jpg'; // with import
 import lassie from '.././assets/images/Lassie.jpg'; // with import
+
+//Custom CSS
+import '../css/imagecarousel.css'
 
 class imageCarousel extends React.Component {
     constructor(props) {
@@ -17,12 +19,11 @@ class imageCarousel extends React.Component {
 
     render() {
         return (
-            <>
-            
-                <Carousel>
+            <div className="carousel-wrapper">
+                <Carousel className = "image-carousel">
                     <Carousel.Item>
                         <img
-                            className="d-block w-100"
+                            className="d-block w-100 carousel-img-fluid"
                             src={dogFood} 
                             // style={{height:"100%",width:"auto"}}
                             alt="First slide"
@@ -34,7 +35,7 @@ class imageCarousel extends React.Component {
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
-                            className="d-block w-100"
+                            className="d-block w-100 carousel-img-fluid"
                             src={crackers} 
                             style={{height:"100%",width:"auto"}}
                             alt="Third slide"
@@ -47,9 +48,8 @@ class imageCarousel extends React.Component {
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
-                            className="d-block w-100"
+                            className="d-block w-100 carousel-img-fluid"
                             src={lassie} 
-                            style={{height:"100%",width:"auto"}}
                             alt="Third slide"
                         />
 
@@ -59,7 +59,7 @@ class imageCarousel extends React.Component {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-            </>
+            </div>
         );
     }
 }

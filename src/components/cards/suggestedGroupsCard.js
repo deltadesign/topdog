@@ -1,19 +1,14 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 // CUSTOM CSS
 import '../../css/suggestedgroupscard.css';
 
-export default class suggestedGroupscards extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {}
-    }
+export default class SuggestedGroupscards extends React.Component {
 
     render() {
         return (
             <>
-                <div className="view-profile-image-container">
+                <div className="suggested-groups-container">
                     <h4 id="view-profile-text">Suggested Groups</h4>
                     <br />
                     <div id="userImage6"></div><h5>Dog Poker Group</h5>

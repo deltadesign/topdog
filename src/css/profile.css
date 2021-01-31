@@ -28,7 +28,9 @@
 }
 
 .profile-ad-wrapper{
+  display: flex;
+  justify-content: center;
   width: 75%;
   background-color: white;
-  margin-top: 0.6em;
+  margin-bottom: 0.6em;
 }

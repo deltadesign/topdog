@@ -9,20 +9,18 @@ import Footer from '../components/footer';
 import ViewprofileCard from './cards/viewprofileCard';
 import ImageCarousel from './carousel';
 import Feedpage from './Feedpage';
+import SuggestedGroupsCards from './cards/suggestedGroupsCard';
 
 //ROUTER
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import SuggestedGroupscard from './cards/suggestedGroupsCard';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
 //BOOTSTRAP COMPONENTS
-// Bootstrap Elements
 import Row from 'react-bootstrap/row';
 import Col from 'react-bootstrap/col';
 
 //CUSTOM CSS
 import '.././css/profile.css'
-import suggestedGroupscards from './cards/suggestedGroupsCard';
 
 class Profile extends React.Component {
   constructor(props) {
@@ -56,6 +54,7 @@ class Profile extends React.Component {
 
   render() {
     return (
+
       <Router>
         <Navbar logout={() => this.logout()} />
 
@@ -64,13 +63,12 @@ class Profile extends React.Component {
             <Row>
               <Col md={3} className="leftcol">
                 <Feed />
+                <SuggestedGroupsCards />
               </Col>
 
               <Col md={6} className="midcol">
                 <StatusForm statusUpdate={(status) => this.updateStatus(status)} />
-                <br />
                 {this.renderPosts()}
-
               </Col>
 
               <Col md={3} className="rightcol">
@@ -78,43 +76,15 @@ class Profile extends React.Component {
                 <div className="profile-ad-wrapper">
                   <ImageCarousel />
                 </div>
-
               </Col>
             </Row>
+
           </section>
         </Route>
-
-        <Route path="/topdog/newsfeed" component={Feedpage} />
-      <section className="profilepage"/>
-      <Navbar logout={() => this.logout()} />
-        
-
-          <Row>
-            <Col md="3" className="leftcol">
-              <Feed />
-              <br/>
-              <SuggestedGroupscard/>
-            </Col>
-
-            <Col md="6" className="midcol">
-              <StatusForm statusUpdate={(status) => this.updateStatus(status)} />
-              <br />
-              {this.renderPosts()}
-            </Col>
-
-            <Col md="3" className="rightcol">
-            <ViewprofileCard />
-            <div className ="profile-carousel">
-              <ImageCarousel/>
-            </div>
-            </Col>
-          </Row>
-
-        
-
+        <Route path="/topdog/newsfeed" component={Feedpage}></Route>
         <Footer />
-
-      <Router />
+      </Router>
+      
     )
   }
 }

@@ -1,9 +1,9 @@
 /* SUGGESTED GROUPS CARD SUGGESTED GROUPS CARD SUGGESTED GROUPS CARD  */
 
-.view-profile-image-container{
+.suggested-groups-container{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     width: 75%;
     background-color: white;
     padding-top: 0.6em;
@@ -35,7 +35,7 @@
   
   #userImage8{
   
-    background: url("../assets/images/filmseats.jpg")no-repeat center center;
+    background: url("../assets/images/filmseats.jpg") no-repeat center center;
     background-size: cover;
     height: 75px;
     width: 75px;
@@ -57,7 +57,7 @@
  
   }
   
-  .view-profile-image-container [id^=userImage]:hover{
+  .suggested-groups-container [id^=userImage]:hover{
     transform: scale(1.2);
     cursor: pointer;
   }

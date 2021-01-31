@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/topdog/static/css/main.d8cf79a2.chunk.css",
-    "main.js": "/topdog/static/js/main.5de502ea.chunk.js",
-    "main.js.map": "/topdog/static/js/main.5de502ea.chunk.js.map",
+    "main.js": "/topdog/static/js/main.8686f01e.chunk.js",
+    "main.js.map": "/topdog/static/js/main.8686f01e.chunk.js.map",
     "runtime-main.js": "/topdog/static/js/runtime-main.e457ad61.js",
     "runtime-main.js.map": "/topdog/static/js/runtime-main.e457ad61.js.map",
     "static/css/2.ae9f1eb3.chunk.css": "/topdog/static/css/2.ae9f1eb3.chunk.css",
@@ -31,6 +31,6 @@
     "static/css/2.ae9f1eb3.chunk.css",
     "static/js/2.768a0a56.chunk.js",
     "static/css/main.d8cf79a2.chunk.css",
-    "static/js/main.5de502ea.chunk.js"
+    "static/js/main.8686f01e.chunk.js"
   ]
 }

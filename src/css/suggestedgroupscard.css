@@ -7,7 +7,7 @@
     width: 75%;
     background-color: white;
     padding-top: 0.6em;
-    text-align: right;
+   
   }
   
   #userImage6{
@@ -19,7 +19,6 @@
     border-radius: 8px;
     border: 3px solid var(--brandbckgrnd);
  
-
   }
   
   #userImage7{
@@ -44,7 +43,6 @@
   
     }
   
-
   #userImage9{
  
     background: url("../assets/images/dogwalking.jpg")no-repeat center center;
@@ -57,7 +55,21 @@
  
   }
   
+.row-wrapper{
+display:flex;
+margin-bottom: 00.6em;
 
+}
+
+.text-wrapper{
+display:flex;
+flex-direction: column;
+align-items: flex-start;
+text-align: left;
+width:70%;
+padding-left: 0.6em;
+
+}
 
 .sugg-groups-left{
   display: flex;
@@ -65,7 +77,6 @@
   align-items: left;
  
 }
-
 
 .spot-on1 {
   height: 40%;
@@ -75,24 +86,6 @@
   border-left: 5px solid chartreuse;
  background-color: chartreuse;
 }
-
-/* 
-.tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-} */
-
-
-
-
-
-
-
 
   .suggested-groups-container [id^=userImage]:hover{
     transform: scale(1.2);

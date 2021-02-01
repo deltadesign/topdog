@@ -30,12 +30,6 @@ export default class StatusForm extends React.Component {
   render() {
     return (
       <Form onSubmit={(e) => this.submitHandler(e)} className='status-form'>
-        {/* <pre>{JSON.stringify(this.state)}</pre> */}
-        {/*       
-      <Form.Group controlId = "username">
-        <Form.Control name = "username" type = "text" value = {this.state.username} placeholder="Username" onChange = {(e) => this.handleChange(e)} required />
-      </Form.Group> */}
-
         <Form.Group controlId="status">
           <Form.Control name="status" type="text" value={this.state.status} placeholder="What's happening?" onChange={(e) => this.handleChange(e)} required />
         </Form.Group>

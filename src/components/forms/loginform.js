@@ -27,7 +27,7 @@ class Login extends React.Component{
         passedAuth : false
       }))
     } else {
-      this.props.login();
+      this.props.login(username);
     }
     
     // this.props.login(username);
@@ -56,8 +56,7 @@ class Login extends React.Component{
             </Form.Group>
               <Button variant = "secondary" type="submit">Submit</Button>
         </Form>
-      </div>
-        
+      </div>     
    )
   }
 }

@@ -16,7 +16,7 @@ class Feedpage extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            posts: ["who let the dogs out??" , "Gangnam Style", "Hello World", "OMG", " BAd day don't want to talk about it",]
+            posts: ["who let the dogs out??" , "Hello World!", "OMG", " Bad day don't want to talk about it",]
         }
     }
 

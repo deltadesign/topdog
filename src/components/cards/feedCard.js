@@ -1,7 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-
+import { TiCamera } from "react-icons/ti";
 // CUSTOM CSS
+
 import '../../css/feedcard.css'
 
 class Feed extends React.Component {
@@ -14,11 +15,13 @@ class Feed extends React.Component {
         return (
             <>
                 <div className="profile-header-card">
-                    
-                        <div className="image-container">
-                            <div id="userImage"></div>
+
+                    <div className="image-container">
+                        <div id="userImage"> 
+                                <div title="upload image"><TiCamera className="feedcard-icon" /></div>
                         </div>
-                    
+                    </div>
+
 
                     <h3>{this.props.username}</h3>
                     <h4>Head of Security</h4>

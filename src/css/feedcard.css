@@ -18,35 +18,22 @@
   width: 150px;
   border-radius: 50%;
   border: 3px solid var(--mainbrand);
-}
-
-/* .spot-on2 {
-  background: url("../assets/images/camera.png") no-repeat center;
-  background: url ("https://img.icons8.com/android/24/000000/camera.png") no-repeat center;
-  height: 40%;
-  width: 40%;
-  border-radius: 50%;
-  border-top: 5px solid chartreuse; 
-  border-left: 5px solid chartreuse;
-  background-color: chartreuse; */
-/* }   */
-
-.feedcard-icon-wrapper a {
-  color:black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .feedcard-icon{
+  padding: 5px;
   height: 40px;
   width: 40px;
   border-radius: 50%;
   background-color: #ff6f69;
-  float:right;
- 
- 
 }
 
 .feedcard-icon:hover{
   transform: scale(1.1);
   color: #555;
+  cursor: pointer;
 }
 

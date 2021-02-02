@@ -6,7 +6,10 @@ import Button from 'react-bootstrap/Button';
 
 class Login extends React.Component{
   constructor(props){
-  super(props)
+  super(props) 
+  this.state = {
+    passedAuth: true,
+  }
 
 }
 
@@ -19,13 +22,15 @@ class Login extends React.Component{
     const password = e.target.password.value;
 
     // conditional for login, if username & pword are blank no access
-    // if(username === '' || password === ''){
-    //   console.log('no access')
-    // } else {
-    //   this.props.login();
-    // }
+    if(username === '' || password !== 'Secret'){
+      this.setState(()=> ({
+        passedAuth : false
+      }))
+    } else {
+      this.props.login(username);
+    }
     
-    this.props.login(username);
+    // this.props.login(username);
 
     e.target.username.value = "";
     e.target.password.value = "";
@@ -33,13 +38,14 @@ class Login extends React.Component{
 
   render() {
    return (
-        
-          <Form onSubmit= {(e) => this.submitHandler(e)}>
+        <div className = "form-wrapper">
+          {/* <pre>{JSON.stringify(this.state)}</pre> */}
+          <p className={this.state.passedAuth ? "login-pass" : "login-fail"}>Username / Password is not recognised</p>
+          <Form onSubmit= {(e) => this.submitHandler(e)} className ="user-login-form">
             <Form.Group controlId = "user-login-name">
               <Form.Row className="align-items-center">
                 <Form.Label>Username</Form.Label>
-                <Form.Control name="username" type = "text" placeholder = "username" required></Form.Control>
-                <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text>
+                <Form.Control name="username" type = "text" placeholder = "username"></Form.Control>
               </Form.Row>
             </Form.Group>
             <Form.Group controlId = "user-password">
@@ -50,8 +56,7 @@ class Login extends React.Component{
             </Form.Group>
               <Button variant = "secondary" type="submit">Submit</Button>
         </Form>
-      
-        
+      </div>     
    )
   }
 }

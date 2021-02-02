@@ -68,6 +68,7 @@
   width: 25%;
   border-radius: 50%;
   background-color: chartreuse;
+  border: 3px solid var(--brandbckgrnd);
 }
 
 .spot-off {
@@ -75,5 +76,6 @@
   width: 25%;
   border-radius: 50%;
   background-color: red;
+  border: 3px solid var(--brandbckgrnd);
 }
 

@@ -6,7 +6,7 @@
     flex-direction: column;
     width: 75%;
     background-color: white;
-    padding-top: 0.6em;
+    padding: 0.6em;
    
   }
   
@@ -51,7 +51,6 @@
     width: 75px;
     border-radius: 8px;
     border: 3px solid var(--brandbckgrnd);
-    margin-left: 0.5em;
  
   }
   
@@ -82,8 +81,7 @@ padding-left: 0.6em;
   height: 40%;
   width: 40%;
   border-radius: 50%;
-  border-top: 5px solid chartreuse;
-  border-left: 5px solid chartreuse;
+  border: 3px solid var(--brandbckgrnd);
  background-color: chartreuse;
 }
 

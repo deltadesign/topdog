@@ -64,7 +64,7 @@
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .landing-page {
     height: 100vh;
     background: var(--brandbckgrnd);
@@ -134,5 +134,19 @@
     color: var(--mainbrand);
     font-family: "Fredericka the Great", cursive;
     background: var(--brandbckgrnd);
+  }
+
+  .form-wrapper {
+    width: 85%;
+  }
+
+  .form-input {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #submit {
+    margin: 50px auto 0 auto;
+    display: block;
   }
 }

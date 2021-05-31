@@ -1,11 +1,11 @@
 /*  LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE */
 
-.landing-page{
+.landing-page {
   display: flex;
   height: 100vh;
   background: var(--brandbckgrnd);
 }
-  
+
 .aboutarea {
   display: flex;
   flex-direction: column;
@@ -14,31 +14,31 @@
   background: var(--mainbrand);
   padding: 1em;
 }
-  
+
 .abouttext {
   width: 80%;
   align-self: center;
 }
-  
+
 .abouttext p {
   font-size: larger;
 }
 
-.abouttext h1{
+.abouttext h1 {
   font-size: 120px;
   color: white;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: "Fredericka the Great", cursive;
   background: var(--topdoglogo) right bottom no-repeat;
 }
 
 .loginbox {
   display: flex;
-  width:40%;
+  width: 40%;
   align-items: center;
   justify-content: center;
   padding: 1em;
 }
-  
+
 .user-login-form {
   width: 100%;
 }
@@ -58,4 +58,81 @@
   visibility: block;
   color: red;
   align-self: flex-start;
+}
+
+.login-logo {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .landing-page {
+    height: 100vh;
+    background: var(--brandbckgrnd);
+  }
+
+  .aboutarea {
+    display: flex;
+    justify-content: center;
+    background: var(--mainbrand);
+    padding: 1em;
+  }
+
+  .abouttext {
+    width: 85%;
+    align-self: center;
+  }
+
+  .abouttext p {
+    font-size: 0.8em;
+  }
+
+  .abouttext h1 {
+    font-size: 4em;
+    color: white;
+    font-family: "Fredericka the Great", cursive;
+    background: none;
+  }
+
+  .landing-foot {
+    font-size: small;
+  }
+
+  .login-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .landing-page {
+    height: 100vh;
+    background: var(--brandbckgrnd);
+  }
+
+  hr {
+    display: none;
+  }
+
+  .loginbox {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+  }
+
+  .aboutarea {
+    display: none;
+  }
+
+  .landing-foot {
+    display: none;
+  }
+
+  .login-logo {
+    display: inline;
+    font-size: 4em;
+    color: var(--mainbrand);
+    font-family: "Fredericka the Great", cursive;
+    background: var(--brandbckgrnd);
+  }
 }

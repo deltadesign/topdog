@@ -39,6 +39,7 @@ class Login extends React.Component{
   render() {
    return (
         <div className = "form-wrapper">
+          <h1 className="login-logo">Top Dog</h1>
           {/* <pre>{JSON.stringify(this.state)}</pre> */}
           <p className={this.state.passedAuth ? "login-pass" : "login-fail"}>Username / Password is not recognised</p>
           <Form onSubmit= {(e) => this.submitHandler(e)} className ="user-login-form">

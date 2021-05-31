@@ -9,10 +9,6 @@ import '../css/landing.css'
 
 
 class Landing extends React.Component{
-  constructor(props){
-  super(props)
-
-  }
 
   // part 2 of login
   // this calls a function in App.js to complete the login
@@ -30,7 +26,7 @@ class Landing extends React.Component{
           <hr/>
           <p>Welcome to topdog, the social media site for four legged friends who want to connect with the rest of the canine world! Share your tail wagging walks and borks with puppers small and large, from all corners of the World Wide Web.</p>
           <hr/>
-          <div>
+          <div className = "landing-foot">
             &copy;{new Date().getFullYear()} Top Dog Inc | All rights reserved | Terms of Service | Privacy |
           </div>
         </div>

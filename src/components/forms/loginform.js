@@ -45,13 +45,13 @@ class Login extends React.Component{
             <Form.Group controlId = "user-login-name">
               <Form.Row className="align-items-center">
                 <Form.Label>Username</Form.Label>
-                <Form.Control name="username" type = "text" placeholder = "username"></Form.Control>
+                <Form.Control name="username" type = "text" placeholder = "username" value= "Bruce Wayne"></Form.Control>
               </Form.Row>
             </Form.Group>
             <Form.Group controlId = "user-password">
               <Form.Row className="align-items-center">
                 <Form.Label>Password</Form.Label>       
-                <Form.Control name="password" type = "password" placeholder = "Password"></Form.Control>            
+                <Form.Control name="password" type = "password" placeholder = "Password" value = "Secret"></Form.Control>            
               </Form.Row>
             </Form.Group>
               <Button variant = "secondary" type="submit">Submit</Button>

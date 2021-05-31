@@ -51,7 +51,7 @@ class Login extends React.Component{
             <Form.Group controlId = "user-password">
               <Form.Row className="align-items-center">
                 <Form.Label>Password</Form.Label>       
-                <Form.Control name="password" type = "password" placeholder = "Password" value = "Secret"></Form.Control>            
+                <Form.Control name="password" type = "password" placeholder = "Password" value="Secret"></Form.Control>            
               </Form.Row>
             </Form.Group>
               <Button variant = "secondary" type="submit">Submit</Button>
